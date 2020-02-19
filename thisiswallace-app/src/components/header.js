@@ -10,6 +10,7 @@ export default function Header() {
       width: 100%;
       height: 90px;
       background-color: ${SOLID.PASTEL};
+      display: fixed;
       display: flex;
       justify-content: space-between;
       align-items: center;
