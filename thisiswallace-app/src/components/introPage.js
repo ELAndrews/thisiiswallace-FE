@@ -9,7 +9,7 @@ export default function IntroPage() {
   const IntroContainer = styled.div`
   height: 100%;
   width: 100%;
-    background: url("../../../public/img/blue-bacteria.jpeg");
+    background: url("https://github.com/ELAndrews/thisiiswallace-FE/blob/develop/thisiswallace-app/public/img/blue-bacteria.jpeg?raw=true");
   `;
 
 
