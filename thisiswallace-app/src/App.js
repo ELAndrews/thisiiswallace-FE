@@ -21,8 +21,8 @@ export default function App() {
   return (
     <Container className="App">
       <Header />
-      <Route path="/" component={IntroPage} />
-      <Route path="/about" component={About} />
+      <Route exact path="/" component={IntroPage} />
+      <Route exact path="/about" component={About} />
       <Route path="/work" component={Work} />
       <Route path="/contact" component={Contact} />
       <Footer />

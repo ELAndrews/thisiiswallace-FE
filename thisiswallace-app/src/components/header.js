@@ -18,19 +18,20 @@ export default function Header() {
   const Logo = styled.div`
     width: 150px;
     text-align: center;
+    margin-right: 10px;
   `;
 
   const NavLinks = styled(NavLink)`
     color: ${SOLID.BLACK};
     text-decoration: none;
-    margin: auto 10px;
+    margin: auto 15px;
     letter-spacing: 2px;
     font-size: 0.7rem;
 
     &:hover {
       text-decoration: underline;
     }
-    &:active {
+    &.active {
       text-decoration: underline;
     }
   `;
@@ -39,7 +40,7 @@ export default function Header() {
     <HeaderContainer className="headerContainer">
       <Logo>LOGO</Logo>
       <div className="navLinks">
-        <NavLinks to="/">HOME</NavLinks>
+        <NavLinks exact to="/">HOME</NavLinks>
         <NavLinks to="/about">ABOUT</NavLinks>
         <NavLinks to="/work">WORK</NavLinks>
         <NavLinks to="/publications">PUBLICATIONS</NavLinks>
