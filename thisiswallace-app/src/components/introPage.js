@@ -11,6 +11,9 @@ export default function IntroPage() {
     width: 100%;
     padding-top: 100px;
     background: url("https://github.com/ELAndrews/thisiiswallace-FE/blob/develop/thisiswallace-app/public/img/blue-bacteria.jpeg?raw=true");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
   `;
 
   const Info = styled.div`

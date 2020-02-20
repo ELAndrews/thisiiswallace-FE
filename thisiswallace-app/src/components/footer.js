@@ -16,6 +16,7 @@ export default function Footer() {
   background-color: ${SOLID.OFF_WHITE};
   position: absolute;
   bottom: 0px;
+  position: fixed;
   display: flex;
   justify-content: space-between;
   align-items: center;
