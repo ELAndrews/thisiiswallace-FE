@@ -13,7 +13,7 @@ export default function Header() {
       document.getElementById("logoContainer").style.display = "none";
       document.getElementById("headerContainer").style.justifyContent = "flex-end";
     }
-  }, location)
+  }, [location.pathname])
 
   const HeaderContainer = styled.div`
       width: 100%;
