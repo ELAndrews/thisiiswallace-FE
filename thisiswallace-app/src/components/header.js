@@ -37,6 +37,7 @@ export default function Header() {
     margin: auto 15px;
     letter-spacing: 2px;
     font-size: 0.7rem;
+    text-underline-position: under;
 
     &:hover {
       text-decoration: underline;
@@ -46,11 +47,54 @@ export default function Header() {
     }
   `;
 
+  const Info = styled.div`
+width:140px;
+height: 150px;
+display: flex;
+flex-direction: row-reverse;
+align-items: center;
+margin-left: 30px;
+justify-content: space-around;
+`;
+
+  const Img = styled.img`
+border: 10px solid ${SOLID.OFF_WHITE};
+height: 60px;
+border-radius: 50%;
+float: right;
+`;
+
+  const InfoContainer = styled.div`
+background-color: ${SOLID.OFF_WHITE};
+width: 150px;
+height: 65px;
+text-align: center;
+margin-top: 10px;
+`;
+
+  const Title = styled.h1`
+color: ${SOLID.BLACK};
+letter-spacing: 2px;
+font-size: 0.8rem;
+`;
+
+  const P = styled.p`
+color: ${SOLID.BLACK};
+letter-spacing: 4px;
+font-size: 0.5rem;
+`;
+
   return (
     <HeaderContainer id="headerContainer">
       <Logo id="logoContainer">
-        LOGO
-        </Logo>
+        <Info className="canvas">
+          <Img src="https://github.com/ELAndrews/thisiiswallace-FE/blob/develop/thisiswallace-app/public/img/profile.jpeg?raw=true" alt="Wallace profile picture" />
+          <InfoContainer className="introPageInfo">
+            <Title>Wallace</Title>
+            <P>LS X VC</P>
+          </InfoContainer>
+        </Info>
+      </Logo>
       <div id="navLinks">
         <NavLinks exact to="/">HOME</NavLinks>
         <NavLinks to="/bio">BIO</NavLinks>
