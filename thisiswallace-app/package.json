@@ -16,7 +16,7 @@
   "scripts": {
     "start": "react-scripts start",
     "devserver": "live-server",
-    "build": "mkdir -p public && cp index.html script.js public",
+    "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
