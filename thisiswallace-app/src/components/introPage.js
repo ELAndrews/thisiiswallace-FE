@@ -13,15 +13,17 @@ export default function IntroPage() {
   `;
 
   const Info = styled.div`
-    width: 80%;
-    height: 80%;
-    position: absolute;
-    left: 10%;
-    top: 10%;
+    width: 700px;
+    height: 65%;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    margin: 0px auto;
+    justify-content: space-around;
   `;
 
   const Img = styled.img`
-    border: 20px solid ${SOLID.PASTEL};
+    border: 30px solid ${SOLID.OFF_WHITE};
     height: 300px;
     border-radius: 50%;
     margin-top: 100px;
@@ -30,12 +32,24 @@ export default function IntroPage() {
 
   const InfoContainer = styled.div`
     background-color: ${SOLID.OFF_WHITE};
-    width: 60%;
-    height: 200px;
+    width: 400px;
+    height: 150px;
+    text-align: center;
+    position: relative;
+    top: 50px;
+    left: 30px;
   `;
 
   const Title = styled.h1`
     color: ${SOLID.BLACK};
+    letter-spacing: 4px;
+    font-size: 2.5rem;
+  `;
+
+  const P = styled.p`
+   color: ${SOLID.BLACK};
+    letter-spacing: 4px;
+    font-size: 0.7rem;
   `;
 
 
@@ -45,6 +59,7 @@ export default function IntroPage() {
         <Img src="https://github.com/ELAndrews/thisiiswallace-FE/blob/develop/thisiswallace-app/public/img/profile.jpeg?raw=true" alt="Wallace profile picture" />
         <InfoContainer className="introPageInfo">
           <Title>Wallace</Title>
+          <P>Life Science | Venture</P>
         </InfoContainer>
       </Info>
     </IntroContainer>

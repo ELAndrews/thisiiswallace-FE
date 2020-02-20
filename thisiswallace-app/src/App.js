@@ -2,8 +2,8 @@ import React from "react";
 import { Route, Link } from "react-router-dom";
 import Header from "./components/header";
 import IntroPage from "./components/introPage";
-import About from "./components/about";
-import Work from "./components/work";
+import Bio from "./components/bio";
+import Pubs from "./components/pubs";
 import Contact from "./components/contact"
 import Footer from "./components/footer";
 
@@ -22,8 +22,8 @@ export default function App() {
     <Container className="App">
       <Header />
       <Route exact path="/" component={IntroPage} />
-      <Route exact path="/about" component={About} />
-      <Route path="/work" component={Work} />
+      <Route path="/bio" component={Bio} />
+      <Route path="/publications" component={Pubs} />
       <Route path="/contact" component={Contact} />
       <Footer />
     </Container>

@@ -1,3 +1,5 @@
+
+
 // Colors 
 export const SOLID = {
     BLACK: "#1B1B1E",
@@ -6,4 +8,7 @@ export const SOLID = {
     PALE_BLUE: "#A9BCD0",
     PASTEL: "#D8DBE2",
     OFF_WHITE: "#F7F8F9"
-} 
+}
+
+//Font
+// in index.css to cover all text arears - Lato, with import in public/html
