@@ -19,7 +19,7 @@ export default function Header() {
       width: 100%;
       height: 90px;
       background-color: ${SOLID.OFF_WHITE};
-      display: fixed;
+      position: fixed;
       display: flex;
       justify-content: space-between;
       align-items: center;
@@ -44,6 +44,7 @@ export default function Header() {
     }
     &.active {
       text-decoration: underline;
+      color: ${SOLID.AQUA_BLUE};
     }
   `;
 

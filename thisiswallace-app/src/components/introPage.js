@@ -7,8 +7,9 @@ import { SOLID } from "./styling/variables"
 export default function IntroPage() {
 
   const IntroContainer = styled.div`
-    height: 100%;
+    height: calc(100% - 100px);
     width: 100%;
+    padding-top: 100px;
     background: url("https://github.com/ELAndrews/thisiiswallace-FE/blob/develop/thisiswallace-app/public/img/blue-bacteria.jpeg?raw=true");
   `;
 
