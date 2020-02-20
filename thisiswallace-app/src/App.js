@@ -6,7 +6,6 @@ import Bio from "./components/bio";
 import Pubs from "./components/pubs";
 import Contact from "./components/contact"
 import Footer from "./components/footer";
-
 import styled from 'styled-components';
 import { SOLID } from "./components/styling/variables"
 
