@@ -14,10 +14,10 @@ export default function Footer() {
   return (
     <FooterContainer>
       <LinkContainer>
-        <a href="https://twitter.com/MxLWallace" target="_blank">
+        <a href="https://twitter.com/MxLWallace" target="_blank" rel="noopener noreferrer">
           <TwitterIcon />
         </a>
-        <a href="https://www.linkedin.com/in/mxlwallace/" target="_blank">
+        <a href="https://www.linkedin.com/in/mxlwallace/" target="_blank" rel="noopener noreferrer">
           <LinkedInIcon />
         </a>
         <Link to="/contact">

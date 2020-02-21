@@ -3,7 +3,8 @@ import Card from '@material-ui/core/Card';
 import CardContent from '@material-ui/core/CardContent';
 import Typography from '@material-ui/core/Typography';
 import CardMedia from '@material-ui/core/CardMedia';
-import { useStyles, BioContainer, Summary, BaseContainer, Content, Cards, CardsEd, Media, H1, Divider } from "./styling/bioStyling";
+import { useStyles, BioContainer, Summary, Cards, CardsEd, Media, H1, H2, Divider } from "./styling/bioStyling";
+import { BaseContainer, Content } from "./styling/globalStyleComponents";
 
 export default function Bio() {
     const classes = useStyles();
@@ -18,35 +19,33 @@ export default function Bio() {
             </Content>
             <BaseContainer>
                 <Content>
-                    <h2>Key positions</h2>
+                    <H2>Key Positions</H2>
                     <Divider />
                     <Cards>
                         <Card className={classes.root}>
                             <CardContent>
                                 <Typography variant="h5" component="h2">
-                                    M Ventures
-            Associate
-            </Typography>
+                                    M Ventures <br />Associate
+                                </Typography>
                                 <Typography className={classes.pos} color="textSecondary">
                                     2018 - Present
-            </Typography>
+                                </Typography>
                                 <Typography variant="body2" component="p" className={classes.p}>
                                     Investing across life science with a particular interest in enabling technologies of synthetic biology, single-cell analysis, gene editing, gene &amp; cell therapies and multi-omics.
-                            </Typography>
+                                </Typography>
                             </CardContent>
                         </Card>
                         <Card className={classes.root}>
                             <CardContent>
                                 <Typography variant="h5" component="h2">
-                                    Accenture UKI
-            Consultant
-            </Typography>
+                                    Accenture UKI<br />Consultant
+                                </Typography>
                                 <Typography className={classes.pos} color="textSecondary">
                                     2014 - 2017
-            </Typography>
+                                </Typography>
                                 <Typography variant="body2" component="p" className={classes.p}>
                                     Broad experience serving financial service clients as part of both the business strategy and strategy operation groups.
-                            </Typography>
+                                </Typography>
                             </CardContent>
                         </Card>
                     </Cards>
@@ -54,7 +53,7 @@ export default function Bio() {
             </BaseContainer>
             <BaseContainer>
                 <Content>
-                    <h2>Education</h2>
+                    <H2>Education</H2>
                     <Divider />
                     <CardsEd>
                         <Card className={classes.rootEd}>
@@ -69,15 +68,14 @@ export default function Bio() {
                             </Media>
                             <CardContent>
                                 <Typography variant="h5" component="h2">
-                                    University of Cambridge
-    MPhil Bioscience Enterprise
-            </Typography>
+                                    University of Cambridge <br /> MPhil Bioscience Enterprise
+                                </Typography>
                                 <Typography className={classes.pos} color="textSecondary">
                                     2017 - 2018
-            </Typography>
+                                </Typography>
                                 <Typography variant="body2" component="p" className={classes.p}>
                                     Multi-disciplinary biotech and business degree. Strategy, healthcare economics, partnerships &amp; alliances, valuations, IB and venture financing.
-                            </Typography>
+                                </Typography>
                             </CardContent>
                         </Card>
                         <Card className={classes.rootEd}>
@@ -92,12 +90,11 @@ export default function Bio() {
                             </Media>
                             <CardContent>
                                 <Typography variant="h5" component="h2">
-                                    University of York
-    BSc Genetics
-            </Typography>
+                                    University of York <br />BSc Genetics
+                                </Typography>
                                 <Typography className={classes.pos} color="textSecondary">
                                     2010 - 2014
-            </Typography>
+                                </Typography>
                                 <Typography variant="body2" component="p" className={classes.p}>
                                     Encompassed the molecular studies of genes and genetic engineering. Included topics from human genetics and disease, population dynamics and ancient DNA.
                             </Typography>
@@ -108,7 +105,7 @@ export default function Bio() {
             </BaseContainer>
             {/* <BaseContainer>
                 <Content>
-                    <h2>awards</h2>
+                    <H2>awards</H2>
                     <Divider />
                 </Content>
             </BaseContainer> */}

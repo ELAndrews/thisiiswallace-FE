@@ -2,32 +2,6 @@ import { makeStyles } from '@material-ui/core/styles';
 import styled from 'styled-components';
 import { SOLID } from "./variables"
 
-export const useStyles = makeStyles({
-    root: {
-        width: 'calc(50% - 100px)',
-        minWidth: 275,
-        maxWidth: 350,
-        margin: '10px auto',
-        textAlign: 'left'
-    },
-    rootEd: {
-        minWidth: 275,
-        maxWidth: 500,
-        margin: '20px auto',
-        textAlign: 'left',
-        display: 'flex',
-    },
-    img: {
-        width: 100
-    },
-    title: {
-        fontSize: '1.6rem',
-    },
-    pos: {
-        fontSize: '0.8 rem',
-        marginBottom: 12,
-    },
-});
 
 export const BioContainer = styled.div`
 width: 100%;
@@ -44,43 +18,36 @@ export const Summary = styled.div`
     padding: 20px;
     margin: 50px auto 0px;
     text-align: center;
-`;
-
-export const BaseContainer = styled.div`
-    width: 100%;
-    margin: 200px 0px;
-    padding: 10px 0px 40px;
-    background-color: ${SOLID.OFF_WHITE};
-    text-align: center;
-`;
-
-export const Content = styled.div`
-    width: 80%;
-    max-width: 800px;
-    margin: 0px auto;
-`;
+    `;
 
 export const Cards = styled.div`
-    width: 80%;
+    width: 90%;
     display: flex;
     justify-content: space-evenly;
+    flex-wrap: wrap;
     margin: 20px auto;
-`;
+    `;
 
 export const CardsEd = styled.div`
-    width: 80%;
+    width: 90%;
     margin: 20px auto;
+    display: flex;
     justify-content: space-evenly;
+    flex-wrap: wrap;
 
-`;
+    `;
 
 export const Media = styled.div`
     padding: 20px;
     margin: auto 0px;
-`;
+    `;
 
 export const H1 = styled.h1`
 
+`;
+
+export const H2 = styled.h1`
+    
 `;
 
 export const Divider = styled.div`
@@ -88,4 +55,31 @@ export const Divider = styled.div`
     max-width: 300px;
     border-bottom: 5px solid ${SOLID.AQUA_BLUE};
     margin: 0px auto 20px;
-`;
+    `;
+
+export const useStyles = makeStyles({
+    root: {
+        width: 'calc(50% - 200px)',
+        minWidth: 275,
+        maxWidth: 350,
+        margin: '20px auto',
+        textAlign: 'left'
+    },
+    rootEd: {
+        width: 'calc(45% - 10px)',
+        minWidth: 375,
+        margin: '20px auto',
+        textAlign: 'left',
+        display: 'flex',
+    },
+    img: {
+        width: 100
+    },
+    title: {
+        fontSize: '1.6rem',
+    },
+    pos: {
+        fontSize: '0.8 rem',
+        marginBottom: 12,
+    },
+});
