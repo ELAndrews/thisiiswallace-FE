@@ -10,5 +10,15 @@ export const SOLID = {
     OFF_WHITE: "#F7F8F9"
 }
 
-//Font
+// Font
 // in index.css to cover all text arears - Lato, with import in public/html
+export const FONT = {
+    LATO: "'Lato', sans-serif",
+    ROBOTO: "'Oswald','Open Sans'"
+}
+
+// Media
+
+export const MEDIA = {
+
+}

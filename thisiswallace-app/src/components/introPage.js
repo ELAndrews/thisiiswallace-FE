@@ -1,61 +1,7 @@
 import React from "react";
-import styled from 'styled-components';
-import { SOLID } from "./styling/variables"
-
-
+import { IntroContainer, Info, Img, InfoContainer, Title, P } from "./styling/introPageStyling";
 
 export default function IntroPage() {
-
-  const IntroContainer = styled.div`
-    height: calc(100% - 100px);
-    width: 100%;
-    padding-top: 100px;
-    background: url("https://github.com/ELAndrews/thisiiswallace-FE/blob/develop/thisiswallace-app/public/img/blue-bacteria.jpeg?raw=true");
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-  `;
-
-  const Info = styled.div`
-    width: 700px;
-    height: 65%;
-    display: flex;
-    flex-direction: row-reverse;
-    align-items: center;
-    margin: 0px auto;
-    justify-content: space-around;
-  `;
-
-  const Img = styled.img`
-    border: 30px solid ${SOLID.OFF_WHITE};
-    height: 300px;
-    border-radius: 50%;
-    margin-top: 100px;
-    float: right;
-  `;
-
-  const InfoContainer = styled.div`
-    background-color: ${SOLID.OFF_WHITE};
-    width: 400px;
-    height: 150px;
-    text-align: center;
-    position: relative;
-    top: 50px;
-    left: 30px;
-  `;
-
-  const Title = styled.h1`
-    color: ${SOLID.BLACK};
-    letter-spacing: 4px;
-    font-size: 2.5rem;
-  `;
-
-  const P = styled.p`
-   color: ${SOLID.BLACK};
-    letter-spacing: 4px;
-    font-size: 0.7rem;
-  `;
-
 
   return (
     <IntroContainer className="introPageContainer">
@@ -66,6 +12,9 @@ export default function IntroPage() {
           <P>Life Science | Venture</P>
         </InfoContainer>
       </Info>
+      {/* <content>
+        <summary>Experienced financial services professional with roles in venture capital and consulting. Skilled in the evaluation of life sciences investments with a keen interest in synthetic biology and senescence. Academic background in genetics and biotech.</summary>
+      </content> */}
     </IntroContainer>
   )
 }

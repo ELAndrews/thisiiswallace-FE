@@ -1,108 +1,24 @@
 import React from "react";
-import styled from 'styled-components';
-import { SOLID } from "./styling/variables"
-import { makeStyles } from '@material-ui/core/styles';
 import Card from '@material-ui/core/Card';
 import CardContent from '@material-ui/core/CardContent';
 import Typography from '@material-ui/core/Typography';
 import CardMedia from '@material-ui/core/CardMedia';
-
-const useStyles = makeStyles({
-    root: {
-        width: 'calc(50% - 100px)',
-        minWidth: 275,
-        maxWidth: 350,
-        margin: '10px 30px',
-        textAlign: 'left'
-    },
-    rootEd: {
-        minWidth: 275,
-        maxWidth: 500,
-        margin: '20px 30px',
-        textAlign: 'left',
-        display: 'flex',
-    },
-    img: {
-        width: 100
-    },
-    title: {
-        fontSize: '1.6rem',
-    },
-    pos: {
-        fontSize: '0.8 rem',
-        marginBottom: 12,
-    },
-});
+import { useStyles, BioContainer, Summary, BaseContainer, Content, Cards, CardsEd, Media, H1, Divider } from "./styling/bioStyling";
 
 export default function Bio() {
-
     const classes = useStyles();
-
-    const BioContainer = styled.div`
-    width: 100%;
-    padding: 150px 0px 70px;
-    background: url("https://github.com/ELAndrews/thisiiswallace-FE/blob/develop/thisiswallace-app/public/img/cells.jpeg?raw=true");
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-  `;
-
-    const Summary = styled.div`
-        background-color: ${SOLID.OFF_WHITE};
-        width: 55%;
-        padding: 30px;
-        margin: 50px auto 0px;
-    `;
-
-    const BaseContainer = styled.div`
-        width: 100%;
-        margin: 250px 0px;
-        padding: 10px 0px 40px;
-        background-color: ${SOLID.OFF_WHITE};
-        text-align: center;
-  `;
-
-    const Content = styled.div`
-        width: 80%;
-        max-width: 800px;
-        margin: 0px auto;
-    `;
-
-    const Cards = styled.div`
-        width: 80%;
-        display: flex;
-        justify-content: space-evenly;
-        margin: 0px auto;
-`;
-
-    const CardsEd = styled.div`
-        width: 80%;
-        margin: 20px auto;
-    `;
-
-    const Media = styled.div`
-        padding: 20px;
-        margin: auto 0px;
-    `;
-
-    const H1 = styled.h1`
-    `;
-
-    const Divider = styled.div`
-        width: 50%;
-        max-width: 300px;
-        border-bottom: 5px solid ${SOLID.AQUA_BLUE};
-        margin: 0px auto 20px;
-    `;
 
     return (
         <BioContainer>
             <Content>
-                <Summary>Experienced financial services professional with roles in venture capital and consulting. Skilled in the evaluation of life sciences investments with a keen interest in synthetic biology and senescence. Academic background in genetics and biotech.</Summary>
+                <Summary>
+                    <H1>BIO</H1>
+                    <Divider />
+                </Summary>
             </Content>
             <BaseContainer>
                 <Content>
-                    <H1>Key positions</H1>
+                    <h2>Key positions</h2>
                     <Divider />
                     <Cards>
                         <Card className={classes.root}>
@@ -138,7 +54,7 @@ export default function Bio() {
             </BaseContainer>
             <BaseContainer>
                 <Content>
-                    <H1>Education</H1>
+                    <h2>Education</h2>
                     <Divider />
                     <CardsEd>
                         <Card className={classes.rootEd}>
@@ -192,7 +108,7 @@ export default function Bio() {
             </BaseContainer>
             {/* <BaseContainer>
                 <Content>
-                    <H1>awards</H1>
+                    <h2>awards</h2>
                     <Divider />
                 </Content>
             </BaseContainer> */}

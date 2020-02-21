@@ -1,8 +1,6 @@
 import React, { useEffect } from "react";
-import { NavLink, useLocation } from "react-router-dom";
-import styled from 'styled-components';
-import { SOLID } from "./styling/variables"
-
+import { useLocation } from "react-router-dom";
+import { HeaderContainer, Logo, NavLinks, Info, Img, InfoContainer, Title, P } from "./styling/headerStyling";
 
 export default function Header() {
 
@@ -14,76 +12,6 @@ export default function Header() {
       document.getElementById("headerContainer").style.justifyContent = "flex-end";
     }
   }, [location.pathname])
-
-  const HeaderContainer = styled.div`
-      width: 100%;
-      height: 90px;
-      background-color: ${SOLID.OFF_WHITE};
-      position: fixed;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-  `;
-
-  const Logo = styled.div`
-    width: 150px;
-    text-align: center;
-    margin-right: 10px;
-  `;
-
-  const NavLinks = styled(NavLink)`
-    color: ${SOLID.BLACK};
-    text-decoration: none;
-    margin: auto 15px;
-    letter-spacing: 2px;
-    font-size: 0.7rem;
-    text-underline-position: under;
-
-    &:hover {
-      text-decoration: underline;
-    }
-    &.active {
-      text-decoration: underline;
-      color: ${SOLID.AQUA_BLUE};
-    }
-  `;
-
-  const Info = styled.div`
-width:140px;
-height: 150px;
-display: flex;
-flex-direction: row-reverse;
-align-items: center;
-margin-left: 30px;
-justify-content: space-around;
-`;
-
-  const Img = styled.img`
-border: 10px solid ${SOLID.OFF_WHITE};
-height: 60px;
-border-radius: 50%;
-float: right;
-`;
-
-  const InfoContainer = styled.div`
-background-color: ${SOLID.OFF_WHITE};
-width: 150px;
-height: 65px;
-text-align: center;
-margin-top: 10px;
-`;
-
-  const Title = styled.h1`
-color: ${SOLID.BLACK};
-letter-spacing: 2px;
-font-size: 0.8rem;
-`;
-
-  const P = styled.p`
-color: ${SOLID.BLACK};
-letter-spacing: 4px;
-font-size: 0.5rem;
-`;
 
   return (
     <HeaderContainer id="headerContainer">
