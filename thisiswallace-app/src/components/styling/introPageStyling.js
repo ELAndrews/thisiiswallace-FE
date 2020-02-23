@@ -1,24 +1,29 @@
 import styled from 'styled-components';
-import { SOLID } from "./variables"
+import { SOLID, MEDIA } from "./variables"
 
 export const IntroContainer = styled.div`
-    height: calc(100% - 100px);
-    width: 100%;
-    padding-top: 100px;
+    padding: 150px 0px 70px;
     background: url("https://github.com/ELAndrews/thisiiswallace-FE/blob/develop/thisiswallace-app/public/img/blue-bacteria.jpeg?raw=true");
-    background-repeat: no-repeat;
     background-attachment: fixed;
-    background-size: cover;
+    @media (max-width: ${MEDIA.TABLET}) {
+        padding-top: 50px;
+    }
 `;
 
 export const Info = styled.div`
-    width: 700px;
+    width: 100%;
+    max-width: 700px;
     height: 65%;
     display: flex;
     flex-direction: row-reverse;
     align-items: center;
     margin: 0px auto;
+    padding-bottom: 60px; 
     justify-content: space-around;
+
+    @media (max-width: ${MEDIA.TABLET}) {
+        flex-direction: column;
+    }
 `;
 
 export const Img = styled.img`
@@ -27,6 +32,12 @@ export const Img = styled.img`
     border-radius: 50%;
     margin-top: 100px;
     float: right;
+
+    @media (max-width: ${MEDIA.TABLET}) {
+        border: 20px solid ${SOLID.OFF_WHITE};
+        height: 40vh;
+        max-height: 250px;
+    }
 `;
 
 export const InfoContainer = styled.div`
@@ -37,6 +48,13 @@ export const InfoContainer = styled.div`
     position: relative;
     top: 50px;
     left: 30px;
+
+    @media (max-width: ${MEDIA.TABLET}) {
+        width: 300px;
+        height: 150px;
+        margin: -20px auto;
+        position: static;
+    }
 `;
 
 export const Title = styled.h1`
@@ -50,3 +68,4 @@ export const P = styled.p`
     letter-spacing: 4px;
     font-size: 0.7rem;
 `;
+

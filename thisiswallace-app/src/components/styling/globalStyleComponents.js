@@ -2,6 +2,7 @@ import styled from 'styled-components';
 import { SOLID } from "./variables"
 
 
+
 export const AppContainer = styled.div`
 background-color: ${SOLID.OFF_WHITE};
 width: 100vw;
@@ -21,3 +22,4 @@ width: 80%;
 max-width: 800px;
 margin: 0px auto;
 `;
+

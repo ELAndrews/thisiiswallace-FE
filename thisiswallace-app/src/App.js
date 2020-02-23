@@ -11,6 +11,7 @@ import { AppContainer } from "./components/styling/globalStyleComponents"
 
 export default function App() {
 
+
   return (
     <AppContainer className="App">
       <Header />

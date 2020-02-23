@@ -1,6 +1,6 @@
 import { makeStyles } from '@material-ui/core/styles';
 import styled from 'styled-components';
-import { SOLID } from "./variables"
+import { SOLID, MEDIA } from "./variables"
 
 
 export const BioContainer = styled.div`
@@ -34,20 +34,23 @@ export const CardsEd = styled.div`
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
-
     `;
 
 export const Media = styled.div`
     padding: 20px;
     margin: auto 0px;
+    
     `;
 
-export const H1 = styled.h1`
-
+export const CardContent = styled.div`
+    width: 90%;
+    margin: 0px auto;
 `;
 
-export const H2 = styled.h1`
-    
+export const H1 = styled.h1`
+`;
+
+export const H2 = styled.h2`
 `;
 
 export const Divider = styled.div`
@@ -66,14 +69,15 @@ export const useStyles = makeStyles({
         textAlign: 'left'
     },
     rootEd: {
-        width: 'calc(45% - 10px)',
-        minWidth: 375,
+        width: '80%',
+        minWidth: 275,
         margin: '20px auto',
-        textAlign: 'left',
-        display: 'flex',
+        textAlign: 'left'
     },
     img: {
-        width: 100
+        minWidth: 70,
+        maxWidth: 200,
+        margin: '0px auto',
     },
     title: {
         fontSize: '1.6rem',
@@ -81,5 +85,6 @@ export const useStyles = makeStyles({
     pos: {
         fontSize: '0.8 rem',
         marginBottom: 12,
+
     },
 });

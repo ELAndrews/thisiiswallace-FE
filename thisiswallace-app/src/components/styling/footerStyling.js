@@ -2,7 +2,7 @@ import { SOLID } from "./variables";
 import styled from 'styled-components';
 
 export const FooterContainer = styled.div`
-    width: 100%;
+    width: 100vw;
     height: 70px;
     background-color: ${SOLID.OFF_WHITE};
     position: absolute;

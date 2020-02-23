@@ -9,3 +9,25 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+
+/* header additional */
+
+#burger {
+  position: absolute;
+  right: 50px;
+  bottom:20px;
+}
+
+@media (max-width: 568px) {
+  .navLinks {
+    display: none;
+  }
+}
+
+
+/* Bio cards additional*/
+
+#edCards {
+  /* width: 400px; */
+}

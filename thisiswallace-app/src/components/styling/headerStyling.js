@@ -1,10 +1,11 @@
-import { SOLID } from "./variables";
+import { SOLID, MEDIA } from "./variables";
 import { NavLink } from "react-router-dom";
 import styled from 'styled-components';
+import { makeStyles } from '@material-ui/core/styles';
 
 
 export const HeaderContainer = styled.div`
-    width: 100%;
+    width: 100vw;
     height: 90px;
     background-color: ${SOLID.OFF_WHITE};
     position: fixed;
@@ -13,10 +14,19 @@ export const HeaderContainer = styled.div`
     align-items: center;
 `;
 
-export const Logo = styled.div`
-    width: 150px;
-    text-align: center;
-    margin-right: 10px;
+export const DesktopMenu = styled.div`
+@media (max-width: ${MEDIA.LARGE_MOBILE}) {
+    display: none;
+}
+
+`;
+
+export const MobileMenu = styled.div`
+    display: none;
+
+    @media (max-width: ${MEDIA.LARGE_MOBILE}) {
+        display: block;
+    }
 `;
 
 export const NavLinks = styled(NavLink)`
@@ -26,15 +36,23 @@ export const NavLinks = styled(NavLink)`
     letter-spacing: 2px;
     font-size: 0.7rem;
     text-underline-position: under;
-
+    
     &:hover {
-     text-decoration: underline;
+        text-decoration: underline;
     }
     &.active {
         text-decoration: underline;
         color: ${SOLID.AQUA_BLUE};
     }
-`;
+    `;
+
+// Mini logo image 
+
+export const Logo = styled.div`
+        width: 150px;
+        text-align: center;
+        margin-right: 10px;
+    `;
 
 export const Info = styled.div`
     width:140px;
@@ -71,4 +89,34 @@ export const P = styled.p`
     color: ${SOLID.BLACK};
     letter-spacing: 4px;
     font-size: 0.5rem;
+`;
+
+
+// Menu Drawer
+
+export const drawerWidth = 240;
+
+export const useStyles = makeStyles(theme => ({
+    hide: {
+        display: 'none',
+    },
+    drawer: {
+        width: drawerWidth,
+        flexShrink: 0,
+    },
+    drawerPaper: {
+        width: drawerWidth,
+    },
+    drawerHeader: {
+        display: 'flex',
+        alignItems: 'center',
+        padding: theme.spacing(0, 1),
+        ...theme.mixins.toolbar,
+        justifyContent: 'flex-start',
+    },
+}));
+
+export const BurgerList = styled.div`
+    display: flex;
+    padding: 20px 5px;
 `;
