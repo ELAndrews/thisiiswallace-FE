@@ -20,6 +20,6 @@ export const FONT = {
 // Media
 export const MEDIA = {
     MOBILE: "568px",
-    LARGE_MOBILE: "650px",
+    LARGE_MOBILE: "700px",
     TABLET: "768px"
 }

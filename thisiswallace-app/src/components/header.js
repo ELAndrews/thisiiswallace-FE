@@ -3,7 +3,6 @@ import { useLocation } from "react-router-dom";
 import { HeaderContainer, Logo, NavLinks, Info, Img, InfoContainer, Title, P, useStyles, BurgerList, DesktopMenu, MobileMenu } from "./styling/headerStyling";
 import { useTheme } from '@material-ui/core/styles';
 import SwipeableDrawer from '@material-ui/core/Drawer';
-import clsx from 'clsx';
 import List from '@material-ui/core/List';
 import Divider from '@material-ui/core/Divider';
 import IconButton from '@material-ui/core/IconButton';

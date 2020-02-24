@@ -11,12 +11,27 @@ code {
 }
 
 
-/* header additional */
+/* --------- header additional --------- */
+
+
 
 #burger {
   position: absolute;
   right: 50px;
   bottom:20px;
+  border: none;
+  background-color: #F7F8F9;
+  color: #1B1B1E;
+}
+
+#burger:hover {
+  color: #58A4B0;
+}
+
+/* removes horrible green glow */
+
+button {
+  outline: none;
 }
 
 @media (max-width: 568px) {
@@ -28,6 +43,3 @@ code {
 
 /* Bio cards additional*/
 
-#edCards {
-  /* width: 400px; */
-}

@@ -5,13 +5,17 @@ export const IntroContainer = styled.div`
     padding: 150px 0px 70px;
     background: url("https://github.com/ELAndrews/thisiiswallace-FE/blob/develop/thisiswallace-app/public/img/blue-bacteria.jpeg?raw=true");
     background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow-x: hidden;
+
     @media (max-width: ${MEDIA.TABLET}) {
         padding-top: 50px;
     }
 `;
 
 export const Info = styled.div`
-    width: 100%;
+    width: 80%;
     max-width: 700px;
     height: 65%;
     display: flex;
@@ -21,7 +25,7 @@ export const Info = styled.div`
     padding-bottom: 60px; 
     justify-content: space-around;
 
-    @media (max-width: ${MEDIA.TABLET}) {
+    @media (max-width: ${MEDIA.LARGE_MOBILE}) {
         flex-direction: column;
     }
 `;
@@ -32,11 +36,16 @@ export const Img = styled.img`
     border-radius: 50%;
     margin-top: 100px;
     float: right;
+    z-index: 1;
 
     @media (max-width: ${MEDIA.TABLET}) {
         border: 20px solid ${SOLID.OFF_WHITE};
         height: 40vh;
         max-height: 250px;
+    }
+
+    @media (max-width: ${MEDIA.LARGE_MOBILE}) {
+        margin: 75px auto 0px;
     }
 `;
 
@@ -48,11 +57,17 @@ export const InfoContainer = styled.div`
     position: relative;
     top: 50px;
     left: 30px;
+    z-index: 0;
 
     @media (max-width: ${MEDIA.TABLET}) {
         width: 300px;
-        height: 150px;
+        height: 145px;
         margin: -20px auto;
+        left: 41px;
+    }
+
+    @media (max-width: ${MEDIA.LARGE_MOBILE}) {
+        margin: -20px auto 0px;
         position: static;
     }
 `;

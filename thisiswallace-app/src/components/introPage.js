@@ -1,9 +1,8 @@
 import React from "react";
 import { BaseContainer, Content } from "./styling/globalStyleComponents";
 import { IntroContainer, Info, Img, InfoContainer, Title, P } from "./styling/introPageStyling";
-import { useStyles, Summary, Cards, CardsEd, Media, H1, H2, Divider, CardEd } from "./styling/bioStyling";
+import { useStyles, Summary, Cards, CardsEd, Media, CardContent, Divider, H1, H2 } from "./styling/bioStyling";
 import Card from '@material-ui/core/Card';
-import CardContent from '@material-ui/core/CardContent';
 import Typography from '@material-ui/core/Typography';
 import CardMedia from '@material-ui/core/CardMedia';
 

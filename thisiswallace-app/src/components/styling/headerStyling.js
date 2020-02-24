@@ -6,12 +6,14 @@ import { makeStyles } from '@material-ui/core/styles';
 
 export const HeaderContainer = styled.div`
     width: 100vw;
-    height: 90px;
+    height: 80px;
     background-color: ${SOLID.OFF_WHITE};
     position: fixed;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    border-bottom: 1px solid ${SOLID.PASTEL};
+    z-index: 2;
 `;
 
 export const DesktopMenu = styled.div`
