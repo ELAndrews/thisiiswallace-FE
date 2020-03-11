@@ -23,8 +23,8 @@ export default function Footer() {
         </Link>
       </LinkContainer>
       <TweetContainer>
-        TWEET
-        </TweetContainer>
+        {/* TWEET */}
+      </TweetContainer>
     </FooterContainer>
   );
 }
