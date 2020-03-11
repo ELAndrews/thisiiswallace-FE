@@ -1,5 +1,4 @@
-import React, { useEffect } from "react";
-import DotNav from "./dotNav";
+import React from "react";
 import { BaseContainer, Content } from "./styling/globalStyleComponents";
 import { IntroContainer, Info, Img, InfoContainer, Title, P } from "./styling/introPageStyling";
 import { useStyles, Summary, Cards, CardsEd, Media, CardContent, Divider, H1, H2 } from "./styling/bioStyling";
@@ -15,7 +14,6 @@ export default function IntroPage() {
 
   return (
     <IntroContainer className="introPageContainer">
-      <DotNav fields={["intro", "positions", "publications", "education", "contact"]} />
       <div id="intro"></div>
       <Info className="canvas">
         <Img src="https://github.com/ELAndrews/thisiiswallace-FE/blob/develop/thisiswallace-app/public/img/profile.jpeg?raw=true" alt="Wallace profile picture" />
