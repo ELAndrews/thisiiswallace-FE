@@ -1,5 +1,5 @@
 import React from "react";
-import { BaseContainer, Content } from "./styling/globalStyleComponents";
+import { BaseContainer, Content, Icon } from "./styling/globalStyleComponents";
 import { IntroContainer, Info, Img, InfoContainer, Title, P } from "./styling/introPageStyling";
 import { useStyles, Summary, Cards, CardsEd, Media, CardContent, Divider, H1, H2 } from "./styling/bioStyling";
 import Card from '@material-ui/core/Card';
@@ -27,6 +27,7 @@ export default function IntroPage() {
       </Summary>
       <div id="positions">
         <BaseContainer>
+          <Icon src="https://github.com/ELAndrews/thisiiswallace-FE/blob/develop/public/img/globe.png?raw=true" alt="globe" />
           <Content>
             <H2>Key Positions</H2>
             <Divider />
@@ -62,6 +63,7 @@ export default function IntroPage() {
         </BaseContainer>
       </div>
       <BaseContainer>
+        <Icon src="https://github.com/ELAndrews/thisiiswallace-FE/blob/develop/public/img/book.png?raw=true" alt="book" />
         <Content>
           <H2>Education</H2>
           <Divider />

@@ -21,6 +21,12 @@ text-align: center;
 export const Content = styled.div`
 width: 80%;
 max-width: 800px;
-margin: 10px auto;
+margin: -50px auto 10px;
 `;
 
+export const Icon = styled.img`
+    margin: 0px auto;
+    position: relative;
+    bottom: 70px;
+    height: 110px;
+`;

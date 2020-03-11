@@ -4,7 +4,7 @@ import CardContent from '@material-ui/core/CardContent';
 import Typography from '@material-ui/core/Typography';
 import CardMedia from '@material-ui/core/CardMedia';
 import { useStyles, BioContainer, Summary, Cards, CardsEd, Media, H1, H2, Divider } from "./styling/bioStyling";
-import { BaseContainer, Content } from "./styling/globalStyleComponents";
+import { BaseContainer, Content, Icon } from "./styling/globalStyleComponents";
 
 export default function Bio() {
     const classes = useStyles();
@@ -18,6 +18,7 @@ export default function Bio() {
                 </Summary>
             </Content>
             <BaseContainer>
+                <Icon src="https://github.com/ELAndrews/thisiiswallace-FE/blob/develop/public/img/globe.png?raw=true" alt="globe" />
                 <Content>
                     <H2>Key Positions</H2>
                     <Divider />
@@ -52,6 +53,7 @@ export default function Bio() {
                 </Content>
             </BaseContainer>
             <BaseContainer>
+                <Icon src="https://github.com/ELAndrews/thisiiswallace-FE/blob/develop/public/img/book.png?raw=true" alt="book" />
                 <Content>
                     <H2>Education</H2>
                     <Divider />
