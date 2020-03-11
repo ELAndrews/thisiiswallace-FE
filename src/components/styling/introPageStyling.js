@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import { SOLID, MEDIA } from "./variables"
 
 export const IntroContainer = styled.div`
-    padding: 150px 0px 70px;
+    padding: 90px 0px 70px;
     background: url("https://github.com/ELAndrews/thisiiswallace-FE/blob/develop/thisiswallace-app/public/img/blue-bacteria.jpeg?raw=true");
     background-attachment: fixed;
     background-repeat: no-repeat;
@@ -17,12 +17,12 @@ export const IntroContainer = styled.div`
 export const Info = styled.div`
     width: 80%;
     max-width: 700px;
-    height: 65%;
+    height: 70vh;
     display: flex;
     flex-direction: row-reverse;
     align-items: center;
     margin: 0px auto;
-    padding-bottom: 60px; 
+    padding-bottom: 10vh;
     justify-content: space-around;
 
     @media (max-width: ${MEDIA.LARGE_MOBILE}) {
@@ -53,6 +53,7 @@ export const InfoContainer = styled.div`
     background-color: ${SOLID.OFF_WHITE};
     width: 400px;
     height: 150px;
+    border-radius: 3px;
     text-align: center;
     position: relative;
     top: 50px;

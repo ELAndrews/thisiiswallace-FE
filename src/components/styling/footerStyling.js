@@ -26,7 +26,6 @@ export const LinkContainer = styled.div`
 
     &:hover {
       color: ${SOLID.AQUA_BLUE};
-      transform: scale(1.2)
     }
   }
 `;

@@ -5,7 +5,7 @@ import { SOLID, MEDIA } from "./variables"
 
 export const BioContainer = styled.div`
 width: 100%;
-padding: 150px 0px 70px;
+padding: 90px 0px 70px;
 background: url("https://github.com/ELAndrews/thisiiswallace-FE/blob/develop/thisiswallace-app/public/img/cells.jpeg?raw=true");
 background-repeat: no-repeat;
 background-attachment: fixed;
@@ -14,6 +14,7 @@ background-size: cover;
 
 export const Summary = styled.div`
     background-color: ${SOLID.OFF_WHITE};
+    border-radius: 3px;
     width: 55%;
     padding: 20px;
     margin: 50px auto 0px;
@@ -66,13 +67,15 @@ export const useStyles = makeStyles({
         minWidth: 275,
         maxWidth: 350,
         margin: '20px auto',
-        textAlign: 'left'
+        textAlign: 'left',
+        padding: 10
     },
     rootEd: {
         width: '80%',
         minWidth: 275,
         margin: '20px auto',
-        textAlign: 'left'
+        textAlign: 'left',
+        padding: 10
     },
     img: {
         minWidth: 70,

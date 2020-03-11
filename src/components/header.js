@@ -51,19 +51,19 @@ export default function Header() {
       <Divider />
       <List>
         <BurgerList>
-          <NavLinks exact to="/" onClick={toggleDrawer('right', false)}>HOME</NavLinks>
+          <NavLinks exact to="/" onClick={toggleDrawer('right', false)} className="burgerLinks">HOME</NavLinks>
         </BurgerList>
         <Divider />
         <BurgerList>
-          <NavLinks to="/bio" onClick={toggleDrawer('right', false)}>BIO</NavLinks>
+          <NavLinks to="/bio" onClick={toggleDrawer('right', false)} className="burgerLinks">BIO</NavLinks>
         </BurgerList>
         <Divider />
         <BurgerList>
-          <NavLinks to="/publications" onClick={toggleDrawer('right', false)}>RESEARCH 	&amp; PUBLICATIONS</NavLinks>
+          <NavLinks to="/publications" onClick={toggleDrawer('right', false)} className="burgerLinks">RESEARCH 	&amp; PUBLICATIONS</NavLinks>
         </BurgerList>
         <Divider />
         <BurgerList>
-          <NavLinks to="/contact" onClick={toggleDrawer('right', false)}>CONTACT</NavLinks>
+          <NavLinks to="/contact" onClick={toggleDrawer('right', false)} className="burgerLinks">CONTACT</NavLinks>
         </BurgerList>
       </List>
     </div>

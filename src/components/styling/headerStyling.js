@@ -120,5 +120,4 @@ export const useStyles = makeStyles(theme => ({
 
 export const BurgerList = styled.div`
     display: flex;
-    padding: 20px 5px;
 `;

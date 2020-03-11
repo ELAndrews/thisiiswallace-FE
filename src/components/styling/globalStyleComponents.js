@@ -21,6 +21,6 @@ text-align: center;
 export const Content = styled.div`
 width: 80%;
 max-width: 800px;
-margin: 0px auto;
+margin: 10px auto;
 `;
 

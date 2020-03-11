@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useEffect } from "react";
+import DotNav from "./dotNav";
 import { BaseContainer, Content } from "./styling/globalStyleComponents";
 import { IntroContainer, Info, Img, InfoContainer, Title, P } from "./styling/introPageStyling";
 import { useStyles, Summary, Cards, CardsEd, Media, CardContent, Divider, H1, H2 } from "./styling/bioStyling";
@@ -6,10 +7,16 @@ import Card from '@material-ui/core/Card';
 import Typography from '@material-ui/core/Typography';
 import CardMedia from '@material-ui/core/CardMedia';
 
+
+
 export default function IntroPage() {
   const classes = useStyles();
+
+
   return (
     <IntroContainer className="introPageContainer">
+      <DotNav fields={["intro", "positions", "publications", "education", "contact"]} />
+      <div id="intro"></div>
       <Info className="canvas">
         <Img src="https://github.com/ELAndrews/thisiiswallace-FE/blob/develop/thisiswallace-app/public/img/profile.jpeg?raw=true" alt="Wallace profile picture" />
         <InfoContainer className="introPageInfo">
@@ -20,40 +27,42 @@ export default function IntroPage() {
       <Summary>
         <summary>Experienced financial services professional with roles in venture capital and consulting. Skilled in the evaluation of life sciences investments with a keen interest in synthetic biology and senescence. Academic background in genetics and biotech.</summary>
       </Summary>
-      <BaseContainer>
-        <Content>
-          <H2>Key Positions</H2>
-          <Divider />
-          <Cards>
-            <Card className={classes.root}>
-              <CardContent>
-                <Typography variant="h5" component="h2">
-                  M Ventures <br />Associate
+      <div id="positions">
+        <BaseContainer>
+          <Content>
+            <H2>Key Positions</H2>
+            <Divider />
+            <Cards>
+              <Card className={classes.root}>
+                <CardContent>
+                  <Typography variant="h5" component="h2">
+                    M Ventures <br />Associate
                                 </Typography>
-                <Typography className={classes.pos} color="textSecondary">
-                  2018 - Present
+                  <Typography className={classes.pos} color="textSecondary">
+                    2018 - Present
                                 </Typography>
-                <Typography variant="body2" component="p" className={classes.p}>
-                  Investing across life science with a particular interest in enabling technologies of synthetic biology, single-cell analysis, gene editing, gene &amp; cell therapies and multi-omics.
+                  <Typography variant="body2" component="p" className={classes.p}>
+                    Investing across life science with a particular interest in enabling technologies of synthetic biology, single-cell analysis, gene editing, gene &amp; cell therapies and multi-omics.
                                 </Typography>
-              </CardContent>
-            </Card>
-            <Card className={classes.root}>
-              <CardContent>
-                <Typography variant="h5" component="h2">
-                  Accenture UKI<br />Consultant
+                </CardContent>
+              </Card>
+              <Card className={classes.root}>
+                <CardContent>
+                  <Typography variant="h5" component="h2">
+                    Accenture UKI<br />Consultant
                                 </Typography>
-                <Typography className={classes.pos} color="textSecondary">
-                  2014 - 2017
+                  <Typography className={classes.pos} color="textSecondary">
+                    2014 - 2017
                                 </Typography>
-                <Typography variant="body2" component="p" className={classes.p}>
-                  Broad experience serving financial service clients as part of both the business strategy and strategy operation groups.
+                  <Typography variant="body2" component="p" className={classes.p}>
+                    Broad experience serving financial service clients as part of both the business strategy and strategy operation groups.
                                 </Typography>
-              </CardContent>
-            </Card>
-          </Cards>
-        </Content>
-      </BaseContainer>
+                </CardContent>
+              </Card>
+            </Cards>
+          </Content>
+        </BaseContainer>
+      </div>
       <BaseContainer>
         <Content>
           <H2>Education</H2>
