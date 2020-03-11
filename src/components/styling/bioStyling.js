@@ -6,7 +6,7 @@ import { SOLID, MEDIA } from "./variables"
 export const BioContainer = styled.div`
 width: 100%;
 padding: 90px 0px 70px;
-background: url("https://github.com/ELAndrews/thisiiswallace-FE/blob/develop/thisiswallace-app/public/img/cells.jpeg?raw=true");
+background: url("https://github.com/ELAndrews/thisiiswallace-FE/blob/develop/public/img/cells.jpeg?raw=true");
 background-repeat: no-repeat;
 background-attachment: fixed;
 background-size: cover;

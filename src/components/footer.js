@@ -1,11 +1,9 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Link } from 'react-router-dom';
 import { FooterContainer, LinkContainer, TweetContainer } from "./styling/footerStyling";
 import TwitterIcon from '@material-ui/icons/Twitter';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import DraftsIcon from '@material-ui/icons/Drafts';
-
-
 
 export default function Footer() {
 

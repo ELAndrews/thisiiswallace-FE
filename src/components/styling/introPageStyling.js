@@ -3,7 +3,7 @@ import { SOLID, MEDIA } from "./variables"
 
 export const IntroContainer = styled.div`
     padding: 90px 0px 70px;
-    background: url("https://github.com/ELAndrews/thisiiswallace-FE/blob/develop/thisiswallace-app/public/img/blue-bacteria.jpeg?raw=true");
+    background: url("https://github.com/ELAndrews/thisiiswallace-FE/blob/develop/public/img/blue-bacteria.jpeg?raw=true");
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;

@@ -74,7 +74,7 @@ export default function Header() {
     <HeaderContainer id="headerContainer">
       <Logo id="logoContainer">
         <Info className="canvas">
-          <Img src="https://github.com/ELAndrews/thisiiswallace-FE/blob/develop/thisiswallace-app/public/img/profile.jpeg?raw=true" alt="Wallace profile picture" />
+          <Img src="https://github.com/ELAndrews/thisiiswallace-FE/blob/develop/public/img/profile.jpeg?raw=true" alt="Wallace profile picture" />
           <InfoContainer className="introPageInfo">
             <Title>Wallace</Title>
             <P>LS X VC</P>

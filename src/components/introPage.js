@@ -16,7 +16,7 @@ export default function IntroPage() {
     <IntroContainer className="introPageContainer">
       <div id="intro"></div>
       <Info className="canvas">
-        <Img src="https://github.com/ELAndrews/thisiiswallace-FE/blob/develop/thisiswallace-app/public/img/profile.jpeg?raw=true" alt="Wallace profile picture" />
+        <Img src="https://github.com/ELAndrews/thisiiswallace-FE/blob/develop/public/img/profile.jpeg?raw=true" alt="Wallace profile picture" />
         <InfoContainer className="introPageInfo">
           <Title>Wallace</Title>
           <P>Life Science | Venture</P>
