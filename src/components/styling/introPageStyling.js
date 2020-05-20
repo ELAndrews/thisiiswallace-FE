@@ -136,7 +136,7 @@ export const ArticleContainer = styled.div`
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    margin: 0px auto;
+    margin: 0px auto 30px;
 `;
 
 export const useStyles = makeStyles({
@@ -144,9 +144,34 @@ export const useStyles = makeStyles({
         width: "40%",
         maxWidth: 600,
         minWidth: 300,
-        margin: "10px"
+        margin: "10px",
     },
     media: {
         height: 140,
     },
 });
+
+export const AImgContainer = styled.div`
+    height: 150px;
+    width: 150px;
+    overflow: hidden;
+    margin: auto;
+`;
+
+export const AImg = styled.img`
+    width: 200px;
+`;
+
+export const ACard = styled.div`
+    display: flex;
+    text-align: left;
+    border-top: 2px solid ${SOLID.PASTEL};
+    cursor: pointer;
+
+    &:hover {
+        background-color: white;
+    }
+`;
+export const CardC = styled.div`
+    width: 70%;
+`;

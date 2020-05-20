@@ -1,6 +1,6 @@
 import React from "react";
 import { Content } from "./styling/globalStyleComponents";
-import { IntroContainer, Info, Img, InfoContainer, Title, P, Summary, Icon, BaseContainer, Point, Points, PP, ArticleContainer, Article, AImg, useStyles, BaseContainer2 } from "./styling/introPageStyling";
+import { IntroContainer, Info, Img, InfoContainer, Title, P, Summary, Icon, BaseContainer, Point, Points, PP, ArticleContainer, ACard, AImg, useStyles, BaseContainer2, CardC, AImgContainer } from "./styling/introPageStyling";
 import { Cards, CardsEd, Media, CardContent, Divider, H1, H2 } from "./styling/bioStyling";
 import Card from '@material-ui/core/Card';
 import Typography from '@material-ui/core/Typography';
@@ -97,34 +97,29 @@ export default function IntroPage() {
             {
               blog.map((curr, index) => {
                 return (
-                  <Card className={classes.root}>
-                    <CardMedia
-                      className={classes.media}
-                      image="https://images.unsplash.com/photo-1578496479531-32e296d5c6e1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=668&q=80"
-                      title="Contemplative Reptile"
-                    />
-                    <CardActionArea>
-                      <CardContent>
-                        <Typography gutterBottom variant="h5" component="h2">
-                          {curr.title}
-                        </Typography>
-                        <Typography gutterBottom ariant="body2" color="textSecondary">
-                          {curr.date}
-                        </Typography>
-                        <Typography variant="body2" color="textSecondary" component="p">
-                          {curr.summary}
-                        </Typography>
-                      </CardContent>
+                  <ACard>
+                    <CardC>
+                      <h3>
+                        {curr.title}
+                      </h3>
+                      <PP>
+                        {curr.date}
+                      </PP>
+                      <PP>
+                        {curr.summary}
+                      </PP>
                       <CardActions>
-                        <Button size="small" color="primary">
-                          Share
-                      </Button>
                         <Button size="small" color="primary">
                           Learn More
                       </Button>
                       </CardActions>
-                    </CardActionArea>
-                  </Card>
+                    </CardC>
+                    <AImgContainer>
+                      <AImg
+                        src="https://images.unsplash.com/photo-1578496479531-32e296d5c6e1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=668&q=80"
+                      />
+                    </AImgContainer>
+                  </ACard>
                 )
               })
             }
@@ -135,3 +130,32 @@ export default function IntroPage() {
     </IntroContainer>
   )
 }
+
+{/* <Card className={classes.root}>
+<CardMedia
+  className={classes.media}
+  image="https://images.unsplash.com/photo-1578496479531-32e296d5c6e1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=668&q=80"
+  title="Contemplative Reptile"
+/>
+<CardActionArea>
+  <CardContent>
+    <Typography gutterBottom variant="h5" component="h2">
+      {curr.title}
+    </Typography>
+    <Typography gutterBottom ariant="body2" color="textSecondary">
+      {curr.date}
+    </Typography>
+    <Typography variant="body2" color="textSecondary" component="p">
+      {curr.summary}
+    </Typography>
+  </CardContent>
+  <CardActions>
+    <Button size="small" color="primary">
+      Share
+  </Button>
+    <Button size="small" color="primary">
+      Learn More
+  </Button>
+  </CardActions>
+</CardActionArea>
+</Card> */}
