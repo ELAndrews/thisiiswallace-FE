@@ -81,7 +81,7 @@ export const P = styled.p`
 export const Summary = styled.div`
     width: 60%;
     max-width: 600px;
-    padding: 0px 50px 30px;
+    padding: 100px 50px 30px;
     margin: 0px auto;
     border-bottom: 5px solid ${SOLID.AQUA_BLUE};
     text-align: center;
