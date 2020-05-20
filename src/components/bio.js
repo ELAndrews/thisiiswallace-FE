@@ -20,7 +20,42 @@ export default function Bio() {
             <BaseContainer>
                 <Icon src="https://github.com/ELAndrews/thisiiswallace-FE/blob/develop/public/img/globe.png?raw=true" alt="globe" />
                 <Content>
-                    <H2>Key Positions</H2>
+                    <H2>Professional Experience</H2>
+                    <Divider />
+                    <Cards>
+                        <Card className={classes.root}>
+                            <CardContent>
+                                <Typography variant="h5" component="h2">
+                                    M Ventures <br />Associate
+                                </Typography>
+                                <Typography className={classes.pos} color="textSecondary">
+                                    2018 - Present
+                                </Typography>
+                                <Typography variant="body2" component="p" className={classes.p}>
+                                    Investing across life science with a particular interest in enabling technologies of synthetic biology, single-cell analysis, gene editing, gene &amp; cell therapies and multi-omics.
+                                </Typography>
+                            </CardContent>
+                        </Card>
+                        <Card className={classes.root}>
+                            <CardContent>
+                                <Typography variant="h5" component="h2">
+                                    Accenture UKI<br />Consultant
+                                </Typography>
+                                <Typography className={classes.pos} color="textSecondary">
+                                    2014 - 2017
+                                </Typography>
+                                <Typography variant="body2" component="p" className={classes.p}>
+                                    Broad experience serving financial service clients as part of both the business strategy and strategy operation groups.
+                                </Typography>
+                            </CardContent>
+                        </Card>
+                    </Cards>
+                </Content>
+            </BaseContainer>
+            <BaseContainer>
+                <Icon src="https://github.com/ELAndrews/thisiiswallace-FE/blob/develop/public/img/globe.png?raw=true" alt="globe" />
+                <Content>
+                    <H2>Research Experience</H2>
                     <Divider />
                     <Cards>
                         <Card className={classes.root}>
@@ -105,12 +140,41 @@ export default function Bio() {
                     </CardsEd>
                 </Content>
             </BaseContainer>
-            {/* <BaseContainer>
+            <BaseContainer>
+                <Icon src="https://github.com/ELAndrews/thisiiswallace-FE/blob/develop/public/img/globe.png?raw=true" alt="globe" />
                 <Content>
-                    <H2>awards</H2>
+                    <H2>{'Prizes \& Awards'}</H2>
                     <Divider />
+                    <Cards>
+                        <Card className={classes.root}>
+                            <CardContent>
+                                <Typography variant="h5" component="h2">
+                                    M Ventures <br />Associate
+                                </Typography>
+                                <Typography className={classes.pos} color="textSecondary">
+                                    2018 - Present
+                                </Typography>
+                                <Typography variant="body2" component="p" className={classes.p}>
+                                    Investing across life science with a particular interest in enabling technologies of synthetic biology, single-cell analysis, gene editing, gene &amp; cell therapies and multi-omics.
+                                </Typography>
+                            </CardContent>
+                        </Card>
+                        <Card className={classes.root}>
+                            <CardContent>
+                                <Typography variant="h5" component="h2">
+                                    Accenture UKI<br />Consultant
+                                </Typography>
+                                <Typography className={classes.pos} color="textSecondary">
+                                    2014 - 2017
+                                </Typography>
+                                <Typography variant="body2" component="p" className={classes.p}>
+                                    Broad experience serving financial service clients as part of both the business strategy and strategy operation groups.
+                                </Typography>
+                            </CardContent>
+                        </Card>
+                    </Cards>
                 </Content>
-            </BaseContainer> */}
+            </BaseContainer>
         </BioContainer>
     );
 }

@@ -13,7 +13,7 @@ export const HeaderContainer = styled.div`
     justify-content: space-between;
     align-items: center;
     border-bottom: 1px solid ${SOLID.PASTEL};
-    z-index: 2;
+    z-index: 10;
 `;
 
 export const DesktopMenu = styled.div`

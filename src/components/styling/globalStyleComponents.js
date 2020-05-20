@@ -12,8 +12,8 @@ overflow-x: hidden;
 
 export const BaseContainer = styled.div`
 width: 100vw;
-margin: 200px 0px;
-padding: 10px 0px 40px;
+margin: 0px 0px;
+padding: 10px 0px;
 background-color: ${SOLID.OFF_WHITE};
 text-align: center;
 `;
