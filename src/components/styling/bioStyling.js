@@ -69,6 +69,10 @@ export const H1 = styled.h1`
 export const H2 = styled.h2`
     text-align: center;
     z-index: 0;
+
+    @media (max-width: ${MEDIA.TABLET}) {
+        font-size: 1.4rem;
+    }
 `;
 
 export const Divider = styled.div`

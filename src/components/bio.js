@@ -14,13 +14,22 @@ import Think from "../assets/imgs/library.png";
 import WallaceAmst from "../assets/imgs/wallaceAmst.jpeg";
 import Circle from "../assets/imgs/circle.png";
 import { bioData } from "../assets/data";
+import KeyboardArrowDownIcon from '@material-ui/icons/KeyboardArrowDown';
+import HighlightOffIcon from '@material-ui/icons/HighlightOff';
 
 export default function Bio() {
     const classes = useStyles();
 
     const handleClick = e => {
         e.preventDefault()
-        console.log(e.target.value)
+        console.log(e.target)
+        if (document.getElementById(e.target.id).classList.contains("activeOpenBtn") === false) {
+            document.getElementById(e.target.id).classList.add("activeOpenBtn")
+            document.getElementById(`${e.target.id}Info`).style.display = "block"
+        } else {
+            document.getElementById(e.target.id).classList.remove("activeOpenBtn")
+            document.getElementById(`${e.target.id}Info`).style.display = "none"
+        }
 
     }
 
@@ -121,10 +130,11 @@ export default function Bio() {
                 <BaseContainerB>
                     <Icon src={Globe} alt="globe" />
                     <H2 value="experience">Professional Experience</H2>
-                    <H2Btn onClick={handleClick} value="experience">
+                    <H2Btn onClick={handleClick} value="experience" className="openBtn" >
+                        <KeyboardArrowDownIcon id="experienceBtn" className="btnIcon" />
                     </H2Btn>
                     <Divider />
-                    <ExperienceContainer id="proex">
+                    <ExperienceContainer id="experienceBtnInfo">
                         {
                             bioData.experience.map((curr, index) => {
                                 return (
@@ -141,10 +151,11 @@ export default function Bio() {
                     </ExperienceContainer>
                     <Icon src={Brain} alt="globe" />
                     <H2 value="research">Research Experience</H2>
-                    <H2Btn onClick={handleClick} value="research">
+                    <H2Btn onClick={handleClick} value="research" className="openBtn">
+                        <KeyboardArrowDownIcon id="researchBtn" className="btnIcon" />
                     </H2Btn>
                     <Divider />
-                    <ResearchContainer id="resexp">
+                    <ResearchContainer id="researchBtnInfo">
                         {
                             bioData.research.map((curr, index) => {
                                 return (
@@ -164,10 +175,11 @@ export default function Bio() {
                     </ResearchContainer>
                     <Icon src={Book} alt="book" />
                     <H2 value="education">Education</H2>
-                    <H2Btn onClick={handleClick} value="education">
+                    <H2Btn onClick={handleClick} value="education" className="openBtn">
+                        <KeyboardArrowDownIcon id="educationBtn" className="btnIcon" />
                     </H2Btn>
                     <Divider />
-                    <EducationContainer id="ed">
+                    <EducationContainer id="educationBtnInfo">
                         {
                             bioData.education.map((curr, index) => {
                                 return (
@@ -183,10 +195,11 @@ export default function Bio() {
                     </EducationContainer>
                     <Icon src={Cert} alt="globe" />
                     <H2 value="awards">{'Prizes \& Awards'}</H2>
-                    <H2Btn onClick={handleClick} value="awards">
+                    <H2Btn onClick={handleClick} value="awards" className="openBtn">
+                        <KeyboardArrowDownIcon id="awardsBtn" className="btnIcon" />
                     </H2Btn>
                     <Divider />
-                    <AwardsContainer id="awards">
+                    <AwardsContainer id="awardsBtnInfo">
                         {
                             bioData.awards.map((curr, index) => {
                                 return (

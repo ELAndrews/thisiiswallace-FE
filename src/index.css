@@ -98,3 +98,30 @@ button {
 #learnBtn {
   color: #0c0c0A
 }
+
+@keyframes rotateMe {
+    0% {transform: scale(1.2)}
+    100% { transform: rotate(180deg);}
+}
+
+.openBtn {
+  transform:rotate(180deg);
+  background: transparent;
+  border: none;
+}
+
+.openBtn:hover {
+  transform: rotate(180deg);
+}
+
+.activeOpenBtn {
+  transform: rotate(180deg);
+}
+
+.activeInfo {
+  display: block;
+}
+
+.btnIcon {
+  z-index: -1;
+}
