@@ -1,11 +1,7 @@
 import React from "react";
-import { Content } from "./styling/globalStyleComponents";
+import { Content, Shadow } from "./styling/globalStyleComponents";
 import { IntroContainer, Info, Img, InfoContainer, Title, P, Summary, Icon, BaseContainer, Point, Points, PP, ArticleContainer, ACard, AImg, useStyles, BaseContainer2, CardC, AImgContainer } from "./styling/introPageStyling";
-import { Cards, CardsEd, Media, CardContent, Divider, H1, H2 } from "./styling/bioStyling";
-import Card from '@material-ui/core/Card';
-import Typography from '@material-ui/core/Typography';
-import CardMedia from '@material-ui/core/CardMedia';
-import CardActionArea from '@material-ui/core/CardActionArea';
+import { CardContent, Divider, H1, H2 } from "./styling/bioStyling";
 import CardActions from '@material-ui/core/CardActions';
 import Button from '@material-ui/core/Button';
 import Brain from "../assets/imgs/brain.png";
@@ -16,7 +12,6 @@ import Cert from "../assets/imgs/medal.png";
 import Think from "../assets/imgs/library.png";
 import Profile from "../assets/imgs/profile.jpeg";
 import { blog } from "../assets/data"
-import Plasma from "../assets/imgs/plasma-ball.jpeg"
 
 
 
@@ -33,13 +28,13 @@ export default function IntroPage() {
           <Img src={Profile} alt="Wallace profile picture" />
           <InfoContainer className="introPageInfo">
             <Title>Wallace</Title>
-            <P>Life Science | Venture</P>
+            <P>LS X VC</P>
           </InfoContainer>
         </Info>
       </div>
       <div id="divider"></div>
       <Summary>Experienced financial services professional with roles in venture capital and consulting. Skilled in the evaluation of life sciences investments with a keen interest in synthetic biology and senescence. Academic background in genetics and biotech.</Summary>
-
+      <Shadow>LS X VC</Shadow>
       <BaseContainer>
         <Content>
           <H2>Key Stats</H2>
@@ -89,7 +84,7 @@ export default function IntroPage() {
           </Points>
         </Content>
       </BaseContainer>
-      <BaseContainer2>
+      <BaseContainer id="activity">
         <Content>
           <Divider />
           <H2>Activity</H2>
@@ -109,7 +104,7 @@ export default function IntroPage() {
                         {curr.summary}
                       </PP>
                       <CardActions>
-                        <Button size="small" color="primary">
+                        <Button size="small" id="learnBtn">
                           Learn More
                       </Button>
                       </CardActions>
@@ -125,37 +120,8 @@ export default function IntroPage() {
             }
           </ArticleContainer>
         </Content>
-      </BaseContainer2>
+      </BaseContainer>
       <div id="dividerEnd"></div>
     </IntroContainer>
   )
 }
-
-{/* <Card className={classes.root}>
-<CardMedia
-  className={classes.media}
-  image="https://images.unsplash.com/photo-1578496479531-32e296d5c6e1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=668&q=80"
-  title="Contemplative Reptile"
-/>
-<CardActionArea>
-  <CardContent>
-    <Typography gutterBottom variant="h5" component="h2">
-      {curr.title}
-    </Typography>
-    <Typography gutterBottom ariant="body2" color="textSecondary">
-      {curr.date}
-    </Typography>
-    <Typography variant="body2" color="textSecondary" component="p">
-      {curr.summary}
-    </Typography>
-  </CardContent>
-  <CardActions>
-    <Button size="small" color="primary">
-      Share
-  </Button>
-    <Button size="small" color="primary">
-      Learn More
-  </Button>
-  </CardActions>
-</CardActionArea>
-</Card> */}

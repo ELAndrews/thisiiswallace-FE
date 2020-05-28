@@ -9,6 +9,7 @@ import IconButton from '@material-ui/core/IconButton';
 import MenuIcon from '@material-ui/icons/Menu';
 import ChevronLeftIcon from '@material-ui/icons/ChevronLeft';
 import ChevronRightIcon from '@material-ui/icons/ChevronRight';
+import Profile from "../assets/imgs/profile.jpeg";
 
 export default function Header() {
 
@@ -74,7 +75,7 @@ export default function Header() {
     <HeaderContainer id="headerContainer">
       <Logo id="logoContainer">
         <Info className="canvas">
-          <Img src="https://github.com/ELAndrews/thisiiswallace-FE/blob/develop/public/img/profile.jpeg?raw=true" alt="Wallace profile picture" />
+          <Img src={Profile} alt="Wallace profile picture" />
           <InfoContainer className="introPageInfo">
             <Title>Wallace</Title>
             <P>LS X VC</P>

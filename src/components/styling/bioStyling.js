@@ -4,21 +4,35 @@ import { SOLID, MEDIA } from "./variables"
 
 
 export const BioContainer = styled.div`
-width: 100%;
-padding: 90px 0px 70px;
-background: url("https://github.com/ELAndrews/thisiiswallace-FE/blob/develop/public/img/cells.jpeg?raw=true");
-background-repeat: no-repeat;
-background-attachment: fixed;
-background-size: cover;
+width: 100vw;
+`;
+
+export const Desktop = styled.div`
+    @media (max-width: ${MEDIA.TABLET}) {
+        display: none;
+    }
+`;
+
+export const Mobile = styled.div`
+    display: none;
+    background-color: ${SOLID.OFF_WHITE};
+    margin: 0px auto;
+    padding: 30px;
+    width: 60%;
+
+    @media (max-width: ${MEDIA.TABLET}) {
+        display: block
+    }
 `;
 
 export const Summary = styled.div`
-    background-color: ${SOLID.OFF_WHITE};
-    border-radius: 3px;
     width: 55%;
     padding: 20px;
-    margin: 50px auto 0px;
+    margin: 0px auto;
     text-align: center;
+    position: relative;
+    bottom: 150px;
+    z-index: 3;
     `;
 
 export const Cards = styled.div`
@@ -49,9 +63,12 @@ export const CardContent = styled.div`
 `;
 
 export const H1 = styled.h1`
+    color: white;
 `;
 
 export const H2 = styled.h2`
+    text-align: center;
+    z-index: 0;
 `;
 
 export const Divider = styled.div`
@@ -91,3 +108,137 @@ export const useStyles = makeStyles({
 
     },
 });
+
+export const ImgContainer = styled.div`
+    width: 35%;
+    overflow: hidden;
+    position: absolute;
+    top: 80px;
+    height: 100%;
+    z-index: 0;
+
+`;
+
+export const Img = styled.img`
+    height: 100vh;
+    margin-left: -100px;
+    z-index: 0;
+
+    @media (max-width: ${MEDIA.TABLET}) {
+        margin-left: -100px;
+    }
+`;
+
+export const BaseContainerB = styled.div`
+    width: 60%;
+    position: relative;
+    left: 25%;
+    bottom: 60px;
+    max-width: 700px;
+    margin: 0px 0px 0px 10%;
+    text-align: center;
+    z-index: 1;
+
+    @media (max-width: ${MEDIA.TABLET}) {
+        width: 100%;
+        left: 15%;
+        bottom: 100px;
+    }
+`;
+
+export const Statement = styled.div`
+    text-align: center;
+    padding: 40px;
+    width: 50%;
+    position: relative;
+    left: 25%;
+    bottom: 60px;
+    max-width: 700px;
+    margin: 0px 0px 0px 10%;
+    text-align: center;
+`;
+
+export const ExperienceContainer = styled.div`
+    margin: 20px auto;
+    width: 90%;
+    text-align: left;
+    @media (max-width: ${MEDIA.TABLET}) {
+        display: none;
+    }
+`;
+
+export const ExCard = styled.div`
+    border-left: 1px dashed ${SOLID.GREY};
+    padding: 20px 20px 20px 40px;
+`;
+
+export const ExImg = styled.img`
+    height: 30px;
+    position: relative;
+    right: 55px;
+    top: 10px;
+`;
+
+export const ResearchContainer = styled.div`
+    margin: 20px auto;
+    text-align: left;
+    @media (max-width: ${MEDIA.TABLET}) {
+        display: none;
+    }
+`;
+
+export const ReCard = styled.div`
+    border-right: 1px dashed ${SOLID.GREY};
+    padding: 20px 40px 20px 20px;
+    display: flex;
+    flex-direction: row;
+`;
+
+export const ReImg = styled.img`
+    height: 30px;
+    position: relative;
+    left: 55px;
+`;
+
+export const EducationContainer = styled.div`
+    margin: 20px auto;
+    width: 90%;
+    text-align: left;
+    @media (max-width: ${MEDIA.TABLET}) {
+        display: none;
+    }
+`;
+
+export const EdImg = styled.img`
+    height: 30px;
+    position: relative;
+    right: 55px;
+    top: 45px;
+`;
+
+export const AwardsContainer = styled.div`
+        margin: 20px auto;
+    width: 90%;
+    text-align: left;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    @media (max-width: ${MEDIA.TABLET}) {
+        display: none;
+    }
+`;
+
+export const ACard = styled.div`
+    padding: 10px;
+    margin: 10px;
+`;
+
+export const Icon = styled.img`
+    margin: 0px auto;
+    height: 50px;
+`;
+
+export const H2Btn = styled.button`
+    cursor: pointer;
+    z-index: 2;
+`;

@@ -1,7 +1,16 @@
 
 
 // Colors 
-export const SOLID = {
+export const SOLID = { // BROWNS
+    BLACK: "#0c0c0A",
+    GREY: "#652f18",
+    AQUA_BLUE: "#895438",
+    PALE_BLUE: "#9B6347",
+    PASTEL: "#f4cfc1",
+    OFF_WHITE: "#F5f6f7"
+}
+
+export const SOLID_OLD = {
     BLACK: "#1B1B1E",
     GREY: "#373F51",
     AQUA_BLUE: "#58A4B0",

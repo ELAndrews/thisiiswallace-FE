@@ -12,7 +12,7 @@ export const FooterContainer = styled.div`
     justify-content: space-between;
     align-items: center;
     border-top: 1px solid ${SOLID.PASTEL};
-    z-index: 2;
+    z-index: 3;
 `;
 
 export const LinkContainer = styled.div`
