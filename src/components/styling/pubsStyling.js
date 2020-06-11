@@ -63,10 +63,14 @@ export const ACard = styled.div`
     padding: 5px;
     background-color: white;
     width: calc(50% - 10px);
-    min-width: 300px;
+    min-width: 280px;
     
     &:hover {
         background-color: ${SOLID.OFF_WHITE};
+    }
+
+    @media (max-width: ${MEDIA.LARGE_MOBILE}) {
+        width: 100%;
     }
 
     @media (max-width: ${MEDIA.LARGE_MOBILE}) {
