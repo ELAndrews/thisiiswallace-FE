@@ -105,7 +105,7 @@ export default function IntroPage() {
                       </PP>
                       <CardActions>
                         <Button size="small" id="learnBtn">
-                          Learn More
+                          Show More
                       </Button>
                       </CardActions>
                     </CardC>

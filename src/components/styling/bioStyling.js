@@ -118,7 +118,7 @@ export const ImgContainer = styled.div`
     overflow: hidden;
     position: absolute;
     top: 80px;
-    height: 100%;
+    height: calc(100% - 80px);
     z-index: 0;
 
 `;
@@ -244,5 +244,5 @@ export const Icon = styled.img`
 
 export const H2Btn = styled.button`
     cursor: pointer;
-    z-index: 2;
+    z-index: 3;
 `;

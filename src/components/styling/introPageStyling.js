@@ -36,6 +36,12 @@ export const Info = styled.div`
         height: 50vh;
     }
 
+    @media (max-width: ${MEDIA.MOBILE}) {
+        flex-direction: column-reverse;
+        height: 70vh;
+        padding: 20px 0px;
+    }
+
 `;
 
 export const Img = styled.img`
@@ -47,15 +53,14 @@ export const Img = styled.img`
         height: 275px;
         margin: 0px auto;
         position: relative;
-        bottom: 50px;
+        top: 60px;
         left: 30px;
     }
 
     @media (max-width: ${MEDIA.MOBILE}) {
         height: 275px;
         margin: 0px auto;
-        left: 0px;
-        right: 10px;
+        left: -20px;
         
     }
 `;
@@ -86,7 +91,7 @@ export const InfoContainer = styled.div`
 
     @media (max-width: ${MEDIA.MOBILE}) {
         width: 100%;
-        right: 60px;
+        left: 0px;
         margin: 0px auto;
     }
 
@@ -104,9 +109,15 @@ export const P = styled.p`
     letter-spacing: 4px;
     font-size: 0.7rem;
 
+    @media (max-width: ${MEDIA.LARGE_MOBILE}) {
+        position: relative;
+        bottom: 25px;
+    }
+
     @media (max-width: ${MEDIA.MOBILE}) {
         position: relative;
         bottom: 25px;
+        left: 30px;
     }
 `;
 
