@@ -22,7 +22,7 @@ export default function Bio() {
 
     const handleClick = e => {
         e.preventDefault()
-        console.log(e.target)
+        console.log(e.target.id)
         if (document.getElementById(e.target.id).classList.contains("activeOpenBtn") === false) {
             document.getElementById(e.target.id).classList.add("activeOpenBtn")
             document.getElementById(`${e.target.id}Info`).style.display = "block"
@@ -130,11 +130,11 @@ export default function Bio() {
                 <BaseContainerB>
                     <Icon src={Globe} alt="globe" />
                     <H2 value="experience">Professional Experience</H2>
-                    <H2Btn onClick={handleClick} value="experience" className="openBtn" >
-                        <KeyboardArrowDownIcon id="experienceBtn" className="btnIcon" />
+                    <H2Btn onClick={handleClick} id="experience" className="openBtn" >
                     </H2Btn>
+                    <KeyboardArrowDownIcon id="experienceBtn" className="btnIcon openBtn" />
                     <Divider />
-                    <ExperienceContainer id="experienceBtnInfo">
+                    <ExperienceContainer id="experienceInfo">
                         {
                             bioData.experience.map((curr, index) => {
                                 return (
@@ -151,11 +151,11 @@ export default function Bio() {
                     </ExperienceContainer>
                     <Icon src={Brain} alt="globe" />
                     <H2 value="research">Research Experience</H2>
-                    <H2Btn onClick={handleClick} value="research" className="openBtn">
-                        <KeyboardArrowDownIcon id="researchBtn" className="btnIcon" />
+                    <H2Btn onClick={handleClick} id="research" className="openBtn">
                     </H2Btn>
+                    <KeyboardArrowDownIcon id="researchBtn" className="btnIcon openBtn" />
                     <Divider />
-                    <ResearchContainer id="researchBtnInfo">
+                    <ResearchContainer id="researchInfo">
                         {
                             bioData.research.map((curr, index) => {
                                 return (
@@ -175,11 +175,11 @@ export default function Bio() {
                     </ResearchContainer>
                     <Icon src={Book} alt="book" />
                     <H2 value="education">Education</H2>
-                    <H2Btn onClick={handleClick} value="education" className="openBtn">
-                        <KeyboardArrowDownIcon id="educationBtn" className="btnIcon" />
+                    <H2Btn onClick={handleClick} id="education" className="openBtn">
                     </H2Btn>
+                    <KeyboardArrowDownIcon id="educationBtn" className="btnIcon openBtn" />
                     <Divider />
-                    <EducationContainer id="educationBtnInfo">
+                    <EducationContainer id="educationInfo">
                         {
                             bioData.education.map((curr, index) => {
                                 return (
@@ -195,11 +195,11 @@ export default function Bio() {
                     </EducationContainer>
                     <Icon src={Cert} alt="globe" />
                     <H2 value="awards">{'Prizes \& Awards'}</H2>
-                    <H2Btn onClick={handleClick} value="awards" className="openBtn">
-                        <KeyboardArrowDownIcon id="awardsBtn" className="btnIcon" />
+                    <H2Btn onClick={handleClick} id="awards" className="openBtn">
                     </H2Btn>
+                    <KeyboardArrowDownIcon id="awardsBtn" className="btnIcon openBtn" />
                     <Divider />
-                    <AwardsContainer id="awardsBtnInfo">
+                    <AwardsContainer id="awardsInfo">
                         {
                             bioData.awards.map((curr, index) => {
                                 return (
@@ -217,162 +217,3 @@ export default function Bio() {
     );
 }
 
-
-{/* <BaseContainer>
-<Icon src={Globe} alt="globe" />
-<Content>
-    <H2>Professional Experience</H2>
-    <Divider />
-    <Cards>
-        <Card className={classes.root}>
-            <CardContent>
-                <Typography variant="h5" component="h2">
-                    M Ventures <br />Associate
-                </Typography>
-                <Typography className={classes.pos} color="textSecondary">
-                    2018 - Present
-                </Typography>
-                <Typography variant="body2" component="p" className={classes.p}>
-                    Investing across life science with a particular interest in enabling technologies of synthetic biology, single-cell analysis, gene editing, gene &amp; cell therapies and multi-omics.
-                </Typography>
-            </CardContent>
-        </Card>
-        <Card className={classes.root}>
-            <CardContent>
-                <Typography variant="h5" component="h2">
-                    Accenture UKI<br />Consultant
-                </Typography>
-                <Typography className={classes.pos} color="textSecondary">
-                    2014 - 2017
-                </Typography>
-                <Typography variant="body2" component="p" className={classes.p}>
-                    Broad experience serving financial service clients as part of both the business strategy and strategy operation groups.
-                </Typography>
-            </CardContent>
-        </Card>
-    </Cards>
-</Content>
-</BaseContainer>
-<BaseContainer>
-<Icon src={Brain} alt="globe" />
-<Content>
-    <H2>Research Experience</H2>
-    <Divider />
-    <Cards>
-        <Card className={classes.root}>
-            <CardContent>
-                <Typography variant="h5" component="h2">
-                    M Ventures <br />Associate
-                </Typography>
-                <Typography className={classes.pos} color="textSecondary">
-                    2018 - Present
-                </Typography>
-                <Typography variant="body2" component="p" className={classes.p}>
-                    Investing across life science with a particular interest in enabling technologies of synthetic biology, single-cell analysis, gene editing, gene &amp; cell therapies and multi-omics.
-                </Typography>
-            </CardContent>
-        </Card>
-        <Card className={classes.root}>
-            <CardContent>
-                <Typography variant="h5" component="h2">
-                    Accenture UKI<br />Consultant
-                </Typography>
-                <Typography className={classes.pos} color="textSecondary">
-                    2014 - 2017
-                </Typography>
-                <Typography variant="body2" component="p" className={classes.p}>
-                    Broad experience serving financial service clients as part of both the business strategy and strategy operation groups.
-                </Typography>
-            </CardContent>
-        </Card>
-    </Cards>
-</Content>
-</BaseContainer>
-<BaseContainer>
-<Icon src={Book} alt="book" />
-<Content>
-    <H2>Education</H2>
-    <Divider />
-    <CardsEd>
-        <Card className={classes.rootEd}>
-            <Media>
-                <CardMedia
-                    className={classes.img}
-                    component="img"
-                    alt="Cambridge University"
-                    image="https://static.wixstatic.com/media/571e14_2f7ec6a9946441cea3100030875bd38f~mv2_d_1200_1391_s_2.png/v1/fill/w_280,h_318,al_c,q_85,usm_0.66_1.00_0.01/571e14_2f7ec6a9946441cea3100030875bd38f~mv2_d_1200_1391_s_2.webp"
-                    title="Cambridge University"
-                />
-            </Media>
-            <CardContent>
-                <Typography variant="h5" component="h2">
-                    University of Cambridge <br /> MPhil Bioscience Enterprise
-                </Typography>
-                <Typography className={classes.pos} color="textSecondary">
-                    2017 - 2018
-                </Typography>
-                <Typography variant="body2" component="p" className={classes.p}>
-                    Multi-disciplinary biotech and business degree. Strategy, healthcare economics, partnerships &amp; alliances, valuations, IB and venture financing.
-                </Typography>
-            </CardContent>
-        </Card>
-        <Card className={classes.rootEd}>
-            <Media>
-                <CardMedia
-                    className={classes.img}
-                    component="img"
-                    alt="Cambridge University"
-                    image="https://static.wixstatic.com/media/571e14_8d0638938c6444d8990402aa5ecad454~mv2.png/v1/fill/w_302,h_362,al_c,q_85,usm_0.66_1.00_0.01/571e14_8d0638938c6444d8990402aa5ecad454~mv2.webp"
-                    title="Cambridge University"
-                />
-            </Media>
-            <CardContent>
-                <Typography variant="h5" component="h2">
-                    University of York <br />BSc Genetics
-                </Typography>
-                <Typography className={classes.pos} color="textSecondary">
-                    2010 - 2014
-                </Typography>
-                <Typography variant="body2" component="p" className={classes.p}>
-                    Encompassed the molecular studies of genes and genetic engineering. Included topics from human genetics and disease, population dynamics and ancient DNA.
-            </Typography>
-            </CardContent>
-        </Card>
-    </CardsEd>
-</Content>
-</BaseContainer>
-<BaseContainer>
-<Icon src={Cert} alt="globe" />
-<Content>
-    <H2>{'Prizes \& Awards'}</H2>
-    <Divider />
-    <Cards>
-        <Card className={classes.root}>
-            <CardContent>
-                <Typography variant="h5" component="h2">
-                    M Ventures <br />Associate
-                </Typography>
-                <Typography className={classes.pos} color="textSecondary">
-                    2018 - Present
-                </Typography>
-                <Typography variant="body2" component="p" className={classes.p}>
-                    Investing across life science with a particular interest in enabling technologies of synthetic biology, single-cell analysis, gene editing, gene &amp; cell therapies and multi-omics.
-                </Typography>
-            </CardContent>
-        </Card>
-        <Card className={classes.root}>
-            <CardContent>
-                <Typography variant="h5" component="h2">
-                    Accenture UKI<br />Consultant
-                </Typography>
-                <Typography className={classes.pos} color="textSecondary">
-                    2014 - 2017
-                </Typography>
-                <Typography variant="body2" component="p" className={classes.p}>
-                    Broad experience serving financial service clients as part of both the business strategy and strategy operation groups.
-                </Typography>
-            </CardContent>
-        </Card>
-    </Cards>
-</Content>
-</BaseContainer> */}

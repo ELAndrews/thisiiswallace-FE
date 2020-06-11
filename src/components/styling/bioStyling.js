@@ -244,5 +244,9 @@ export const Icon = styled.img`
 
 export const H2Btn = styled.button`
     cursor: pointer;
+    height: 30px;
+    width: 30px;
     z-index: 3;
+    position: relative;
+    left: 10px;
 `;

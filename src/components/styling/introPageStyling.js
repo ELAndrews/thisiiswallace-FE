@@ -6,7 +6,7 @@ export const IntroContainer = styled.div`
     padding: 90px 0px 0px;
 
     @media (max-width: ${MEDIA.TABLET}) {
-        padding-top: 50px;
+        padding-top: 90px;
     }
 `;
 
@@ -61,6 +61,7 @@ export const Img = styled.img`
         height: 275px;
         margin: 0px auto;
         left: -20px;
+        bottom: 20px;
         
     }
 `;

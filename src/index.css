@@ -124,4 +124,6 @@ button {
 
 .btnIcon {
   z-index: 1;
+  position: relative;
+  right: 18px;
 }
