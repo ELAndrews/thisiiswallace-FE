@@ -1,9 +1,8 @@
 import React from "react";
-import { Content, Shadow } from "./styling/globalStyleComponents";
-import { IntroContainer, Info, Img, InfoContainer, Title, P, Summary, Icon, BaseContainer, Point, Points, PP, ArticleContainer, ACard, AImg, useStyles, BaseContainer2, CardC, AImgContainer } from "./styling/introPageStyling";
+import { Content, Shadow, ShowBtn } from "./styling/globalStyleComponents";
+import { IntroContainer, Info, Img, InfoContainer, Title, P, Summary, Icon, BaseContainer, Point, Points, PP, ArticleContainer, ACard, AImg, useStyles, CardC, AImgContainer } from "./styling/introPageStyling";
 import { CardContent, Divider, H1, H2 } from "./styling/bioStyling";
 import CardActions from '@material-ui/core/CardActions';
-import Button from '@material-ui/core/Button';
 import Brain from "../assets/imgs/brain.png";
 import Book from "../assets/imgs/book.png";
 import Globe from "../assets/imgs/globe.png";
@@ -16,7 +15,7 @@ import { blog } from "../assets/data"
 
 
 
-export default function IntroPage() {
+export default function IntroPage(props) {
   const classes = useStyles();
 
 
@@ -33,8 +32,8 @@ export default function IntroPage() {
         </Info>
       </div>
       <div id="divider"></div>
-      <Summary>Experienced financial services professional with roles in venture capital and consulting. Skilled in the evaluation of life sciences investments with a keen interest in synthetic biology and senescence. Academic background in genetics and biotech.</Summary>
       <Shadow>LS X VC</Shadow>
+      <Summary>Experienced financial services professional with roles in venture capital and consulting. Skilled in the evaluation of life sciences investments with a keen interest in synthetic biology and senescence. Academic background in genetics and biotech.</Summary>
       <BaseContainer>
         <Content>
           <H2>Key Stats</H2>
@@ -104,9 +103,9 @@ export default function IntroPage() {
                         {curr.summary}
                       </PP>
                       <CardActions>
-                        <Button size="small" id="learnBtn">
+                        <ShowBtn size="small" id="learnBtn" value={curr.id} onClick={props.handleClick}>
                           Show More
-                      </Button>
+                      </ShowBtn>
                       </CardActions>
                     </CardC>
                     <AImgContainer>

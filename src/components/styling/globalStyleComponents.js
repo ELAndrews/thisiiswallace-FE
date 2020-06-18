@@ -12,7 +12,6 @@ overflow-x: hidden;
 
 export const BaseContainer = styled.div`
 width: 100vw;
-margin: 200px 0px;
 padding: 10px 0px 40px;
 background-color: ${SOLID.OFF_WHITE};
 text-align: center;
@@ -54,11 +53,40 @@ export const Shadow = styled.div`
     z-index: 2;
 
     @media (max-width: ${MEDIA.TABLET}) {
-        font-size: 5rem;
-    }
-
-    @media (max-width: ${MEDIA.MOBILE}) {
         font-size: 3rem;
+        top: 70%;
     }
 `;
 
+
+
+export const ShowBtn = styled.button`
+    background-color: transparent;
+    border: none;
+    text-transform: uppercase;
+    padding: 6px 8px;
+    border-radius: 5px;
+
+    &:hover {
+        background-color: #f5f5f5;
+    } 
+
+    &:active {
+        background-color: white;
+    }
+
+
+`;
+
+export const UpBtn = styled.button`
+    position: absolute;
+    padding: 2px 4px;
+    bottom: 80px;
+    right: 0px;
+    border: none;
+    color: white;
+    background-color: ${SOLID.PALE_BLUE};
+    opacity: 0.6;
+    z-index: 2;
+    cursor: pointer;
+`

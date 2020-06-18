@@ -13,7 +13,6 @@ export const IntroContainer = styled.div`
 export const BaseContainer2 = styled.div`
     width: 100vw;
     padding: 10px 0px 40px;
-    margin-top: -200px;
     background-color: ${SOLID.OFF_WHITE};
     text-align: center;
     z-index: 2;
@@ -38,7 +37,8 @@ export const Info = styled.div`
 
     @media (max-width: ${MEDIA.MOBILE}) {
         flex-direction: column-reverse;
-        height: 70vh;
+        height: 40vh;
+        margin-top: 60px;
         padding: 20px 0px;
     }
 
@@ -78,8 +78,8 @@ export const InfoContainer = styled.div`
 
     @media (max-width: ${MEDIA.TABLET}) {
         width: 300px;
-        height: 15px;
-        bottom: 60px;
+        height: 150px;
+        bottom: 100px;
         margin: 0px auto;
     }
 

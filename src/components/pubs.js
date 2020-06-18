@@ -1,17 +1,14 @@
 import React from "react";
+import { useHistory } from "react-router-dom"
 import { PubsContainer, H1, H2, ArticleContainer, ACard, PP, CardC, AImgContainer, AImg } from "./styling/pubsStyling";
-import Particles from 'react-particles-js';
+import { ShowBtn } from "./styling/globalStyleComponents"
 import { blog } from "../assets/data"
 import CardActions from '@material-ui/core/CardActions';
-import Button from '@material-ui/core/Button';
 
 
 
-export default function Work() {
+export default function Work(props) {
 
-    const handleClick = e => {
-        console.log(e)
-    }
 
     return (
         <PubsContainer>
@@ -21,9 +18,9 @@ export default function Work() {
                 {
                     blog.map((curr, index) => {
                         return (
-                            <ACard>
+                            <ACard key={index}>
                                 <CardC>
-                                    <h5>
+                                    <h5 onClick={props.handleClick}>
                                         {curr.title}
                                     </h5>
                                     <PP>
@@ -32,10 +29,10 @@ export default function Work() {
                                     <PP>
                                         {curr.summary}
                                     </PP>
-                                    <CardActions >
-                                        <Button size="small" className="learnBtn" onClick={handleClick} id={curr.title} >
+                                    <CardActions value={curr.id} onClick={props.handleClick} >
+                                        <ShowBtn size="small" className="learnBtn" value={curr.id} onClick={props.handleClick}>
                                             Show More
-                      </Button>
+                      </ShowBtn>
                                     </CardActions>
                                 </CardC>
                                 <AImgContainer>
@@ -52,73 +49,5 @@ export default function Work() {
     )
 }
 
-{/* <Particles
-    params={{
-        "fps_limit": 28,
-        "particles": {
-            "number": {
-                "value": 200,
-                "density": {
-                    "enable": false
-                }
-            },
-            "line_linked": {
-                "enable": true,
-                "distance": 30,
-                "opacity": 0.4
-            },
-            "move": {
-                "speed": 1
-            },
-            "opacity": {
-                "anim": {
-                    "enable": true,
-                    "opacity_min": 0.05,
-                    "speed": 2,
-                    "sync": false
-                },
-                "value": 0.4
-            },
-
-        },
-        "polygon": {
-            "debug": true,
-            "enable": true,
-            "scale": 0.5,
-            "type": "inline",
-            "move": {
-                "radius": 10
-            },
-            "url": {
-                "src": '../assets/imgs/dna-strand.svg',
-                "width": 100,
-                "height": 100
-            },
-            "inline": {
-                "arrangement": "equidistant"
-            },
-            "draw": {
-                "enable": true,
-                "stroke": {
-                    "color": "white"
-                }
-            }
-        },
-        "retina_detect": false,
-        "interactivity": {
-            "events": {
-                "onhover": {
-                    "enable": true,
-                    "mode": "bubble"
-                }
-            },
-            "modes": {
-                "bubble": {
-                    "size": 6,
-                    "distance": 40
-                }
-            }
-        }
-    }} /> */}
 
     // https://rpj.bembi.org/#mask

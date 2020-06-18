@@ -1,5 +1,6 @@
 import styled from 'styled-components';
-import { SOLID, MEDIA } from "./variables"
+import { SOLID, MEDIA } from "./variables";
+import { NavLink } from "react-router-dom";
 
 export const PubsContainer = styled.div`
     margin: 100px auto 0px;
@@ -83,4 +84,55 @@ export const CardC = styled.div`
     @media (max-width: ${MEDIA.TABLET}) {
         width: 100%
     }
+`;
+
+export const ArticleCon = styled.div`
+    width: 90%;
+    max-width: 900px;
+    margin: 0px auto 40px;
+`;
+
+export const ArticleTitle = styled.h3`
+`;
+
+export const ArticleDate = styled.p`
+    font-size: 10px;
+    position: relative;
+    bottom: 10px;
+`;
+
+export const ArticleImg = styled.div`
+    width: 80%;
+    height: 80px;
+    overflow: hidden;
+    margin: 0px auto;
+`;
+
+export const ArtImg = styled.img`
+    width: 100%;
+    position: relative;
+    bottom: 50%;
+`;
+
+export const ArticleSummary = styled.p`
+    font-size: 12px;
+    font-style: italic;
+`;
+
+export const ArticleText = styled.p`
+    font-size: 14px;
+`;
+
+export const BackBtn = styled(NavLink)`
+    background-color: transparent;
+    border: none;
+    text-transform: uppercase;
+    padding: 6px 8px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: black;
+    font-size: 12px;
+    position: relative;
+    bottom: 10px;
+    cursor: pointer;
 `;
