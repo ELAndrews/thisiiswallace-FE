@@ -83,7 +83,7 @@ export default function IntroPage(props) {
           </Points>
         </Content>
       </BaseContainer>
-      <BaseContainer id="activity">
+      {/* <BaseContainer id="activity">
         <Content>
           <Divider />
           <H2>Activity</H2>
@@ -119,7 +119,7 @@ export default function IntroPage(props) {
             }
           </ArticleContainer>
         </Content>
-      </BaseContainer>
+      </BaseContainer> */}
       <div id="dividerEnd"></div>
     </IntroContainer>
   )

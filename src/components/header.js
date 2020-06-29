@@ -59,10 +59,10 @@ export default function Header() {
           <NavLinks to="/bio" onClick={toggleDrawer('right', false)} className="burgerLinks">BIO</NavLinks>
         </BurgerList>
         <Divider />
-        <BurgerList>
+        {/* <BurgerList>
           <NavLinks to="/publications" onClick={toggleDrawer('right', false)} className="burgerLinks">RESEARCH 	&amp; PUBLICATIONS</NavLinks>
         </BurgerList>
-        <Divider />
+        <Divider /> */}
         <BurgerList>
           <NavLinks to="/contact" onClick={toggleDrawer('right', false)} className="burgerLinks">CONTACT</NavLinks>
         </BurgerList>
@@ -85,7 +85,7 @@ export default function Header() {
       <DesktopMenu>
         <NavLinks exact to="/">HOME</NavLinks>
         <NavLinks to="/bio">BIO</NavLinks>
-        <NavLinks to="/publications">RESEARCH 	&amp; PUBLICATIONS</NavLinks>
+        {/* <NavLinks to="/publications">RESEARCH 	&amp; PUBLICATIONS</NavLinks> */}
         <NavLinks to="/contact">CONTACT</NavLinks>
       </DesktopMenu>
       {/* Header media query burger menu */}
