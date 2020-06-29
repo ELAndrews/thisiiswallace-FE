@@ -20,6 +20,7 @@ export default function IntroPage(props) {
 
 
   return (
+    <div>
     <IntroContainer className="introPageContainer">
       <div id="intro"></div>
       <div id="introCanvas">
@@ -120,7 +121,8 @@ export default function IntroPage(props) {
           </ArticleContainer>
         </Content>
       </BaseContainer> */}
-      <div id="dividerEnd"></div>
     </IntroContainer>
+    <div id="dividerEnd"></div>
+    </div>
   )
 }

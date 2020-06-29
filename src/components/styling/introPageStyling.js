@@ -3,11 +3,12 @@ import { SOLID, MEDIA } from "./variables"
 import { makeStyles } from '@material-ui/core/styles';
 
 export const IntroContainer = styled.div`
-    padding: 90px 0px 0px;
+    margin-bottom: -200px;
+     padding: 90px 0px 0px;
 
     @media (max-width: ${MEDIA.TABLET}) {
         padding-top: 90px;
-    }
+    }  
 `;
 
 export const BaseContainer2 = styled.div`
