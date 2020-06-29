@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import { BaseContainer } from "../styling/globalStyleComponents";
-import { FormContainer, Form, Input, H3, SubBtn } from "../styling/privateStyling"
+import { BaseContainer } from "./styling/globalStyleComponents";
+import { FormContainer, Form, Input, H3, SubBtn } from "./styling/privateStyling"
 import axios from "axios";
 
 export default function Login() {
@@ -25,7 +25,7 @@ export default function Login() {
         //     .then(res => {
         //         window.document.getElementById("submitSuccess").style.display = "block"
         //         window.document.getElementById("form").style.display = "none"
-
+        //          ADD REDIRECT 
         //     })
         //     .catch(err => {
         //         window.document.getElementById("loading").style.display = "none"

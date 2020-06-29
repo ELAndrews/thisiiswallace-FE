@@ -18,9 +18,9 @@ export default function Footer() {
         <a href="https://www.linkedin.com/in/mxlwallace/" target="_blank" rel="noopener noreferrer">
           <LinkedInIcon />
         </a>
-        <Link to="/contact">
+        <a href="mailto:Wallace@thisiswallace.com">
           <DraftsIcon />
-        </Link>
+          </a>
       </LinkContainer>
       <TweetContainer>
         {/* TWEET */}

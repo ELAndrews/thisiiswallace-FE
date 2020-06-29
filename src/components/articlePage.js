@@ -16,9 +16,6 @@ export default function Article(props) {
 
     return (
         <PubsContainer>
-            <BackBtn to="/publications">
-                Back
-                      </BackBtn>
             <ArticleCon id="top" >
                 {
                     props.article == undefined ?

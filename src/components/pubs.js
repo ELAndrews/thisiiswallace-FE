@@ -9,7 +9,6 @@ import CardActions from '@material-ui/core/CardActions';
 
 export default function Work(props) {
 
-
     return (
         <PubsContainer>
             <H1>Publications and Research</H1>

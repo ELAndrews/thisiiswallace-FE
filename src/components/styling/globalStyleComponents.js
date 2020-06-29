@@ -51,6 +51,7 @@ export const Shadow = styled.div`
     width: 100%;
     background-color: transparent;
     z-index: 2;
+    cursor: none;
 
     @media (max-width: ${MEDIA.TABLET}) {
         font-size: 3rem;
@@ -66,6 +67,7 @@ export const ShowBtn = styled.button`
     text-transform: uppercase;
     padding: 6px 8px;
     border-radius: 5px;
+
 
     &:hover {
         background-color: #f5f5f5;

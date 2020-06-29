@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Route, useHistory, Redirect } from "react-router-dom";
+import { AppContainer } from "./components/styling/globalStyleComponents";
 import Header from "./components/header";
 import IntroPage from "./components/introPage";
 import Bio from "./components/bio";
@@ -7,8 +8,7 @@ import Pubs from "./components/pubs";
 import Article from "./components/articlePage";
 import Contact from "./components/contact";
 import Footer from "./components/footer";
-import Login from "./components/Private /login"
-import { AppContainer } from "./components/styling/globalStyleComponents";
+import Login from "./components/login.js";
 import { blog } from "./assets/data"
 
 
@@ -40,13 +40,6 @@ export default function App() {
     history.push(`/publications/${e.target.value}`)
   }
 
-  const privateRoute = e => {
-    if (!localStorage.getItem("wallaceToken")) {
-      return <Redirect to="/" />
-    } else {
-      return <Route path="/nothing-to-see-here/dashboard" component={Login} />
-    }
-  }
 
   return (
     <AppContainer className="App">
