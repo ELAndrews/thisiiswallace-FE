@@ -88,9 +88,9 @@ export default function Contact() {
               className="formInput message"
               onChange={handleChange} />
             <p className="error" id="invalid">{error}</p>
+            <p className="error" id="error">Sorry. There was an error submitting your form.</p>
             <Button value="Submit" id="submit" className="submit" onClick={handleSubmit}>Submit</Button>
             <p className="loading" id="loading"></p>
-            <p className="error" id="error">Sorry. There was an error submitting your form.</p>
           </Form>
         </FormContainer>
         <SubmissionContainer id="submitSuccess">

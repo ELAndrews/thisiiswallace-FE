@@ -20,10 +20,10 @@ export const BaseContainer2 = styled.div`
 
 export const Info = styled.div`
     max-width: 900px;
-    height: 70vh;
+    height: 60vh;
     display: flex;
     width: 100%;
-    padding: 20px;
+    padding: 1%;
     flex-direction: row-reverse;
     margin: 0px auto;
     justify-content: space-between;
@@ -33,12 +33,13 @@ export const Info = styled.div`
         flex-direction: column-reverse;
         margin: 0px auto;
         height: 50vh;
+        margin-top: -30px;
     }
 
     @media (max-width: ${MEDIA.MOBILE}) {
         flex-direction: column-reverse;
         height: 40vh;
-        margin-top: 60px;
+        margin-top: 10px;
         padding: 20px 0px;
     }
 
@@ -60,9 +61,8 @@ export const Img = styled.img`
     @media (max-width: ${MEDIA.MOBILE}) {
         height: 275px;
         margin: 0px auto;
-        left: -20px;
+        left: -30px;
         bottom: 20px;
-        
     }
 `;
 
@@ -73,7 +73,7 @@ export const InfoContainer = styled.div`
     text-align: center;
     position: relative;
     left: 30px;
-    bottom: 40px;
+    bottom: 100px;
     z-index: 1;
 
     @media (max-width: ${MEDIA.TABLET}) {
@@ -133,6 +133,12 @@ export const Summary = styled.div`
     position: relative;
     bottom: 400px;
     z-index: 3;
+
+    @media (max-width: ${MEDIA.TABLET}) {
+        bottom: 530px;
+        padding: 5vh 0px 30px;
+        width: 80%;
+    }
 `;
 
 export const BaseContainer = styled.div`
