@@ -24,7 +24,7 @@ export default function IntroPage(props) {
     <IntroContainer className="introPageContainer">
       <div id="intro"></div>
       <div id="introCanvas">
-        <Info>
+        <Info className="introbox">
           <Img src={Profile} alt="Wallace profile picture" />
           <InfoContainer className="introPageInfo">
             <Title>Wallace</Title>
@@ -32,8 +32,8 @@ export default function IntroPage(props) {
           </InfoContainer>
         </Info>
       </div>
-      <div id="divider"></div>
       <Shadow>LS X VC</Shadow>
+      <div id="divider"></div>
       <Summary>Experienced financial services professional with roles in venture capital and consulting. Skilled in the evaluation of life sciences investments with a keen interest in synthetic biology and senescence. Academic background in genetics and biotech.</Summary>
       <BaseContainer>
         <Content>

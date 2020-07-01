@@ -4,16 +4,16 @@ import { makeStyles } from '@material-ui/core/styles';
 
 export const IntroContainer = styled.div`
     margin-bottom: -200px;
-     padding: 90px 0px 0px;
+    padding: 50px 0px 0px;
 
     @media (max-width: ${MEDIA.TABLET}) {
-        padding-top: 90px;
+        padding-top: 50px;
     }  
 `;
 
 export const BaseContainer2 = styled.div`
     width: 100vw;
-    padding: 10px 0px 40px;
+    padding: 10px 0px 0px;
     background-color: ${SOLID.OFF_WHITE};
     text-align: center;
     z-index: 2;
@@ -21,10 +21,9 @@ export const BaseContainer2 = styled.div`
 
 export const Info = styled.div`
     max-width: 900px;
-    height: 60vh;
-    display: flex;
-    width: 100%;
-    padding: 1%;
+    height: 350px;
+    display: flex; 
+    padding: 2%;
     flex-direction: row-reverse;
     margin: 0px auto;
     justify-content: space-between;
@@ -33,37 +32,19 @@ export const Info = styled.div`
     @media (max-width: ${MEDIA.LARGE_MOBILE}) {
         flex-direction: column-reverse;
         margin: 0px auto;
-        height: 50vh;
-        margin-top: -30px;
+        margin-top: -80px;
+        margin-left: -50px;
+        width: 100vw;
     }
-
-    @media (max-width: ${MEDIA.MOBILE}) {
-        flex-direction: column-reverse;
-        height: 40vh;
-        margin-top: 10px;
-        padding: 20px 0px;
-    }
-
 `;
 
 export const Img = styled.img`
-    height: 400px;
-    float: right;
+    height: 275px;
     z-index: 1;
 
-    @media (max-width: ${MEDIA.LARGE_MOBILE}) {
+    @media (max-width: ${MEDIA.TABLET}) {
         height: 275px;
         margin: 0px auto;
-        position: relative;
-        top: 60px;
-        left: 30px;
-    }
-
-    @media (max-width: ${MEDIA.MOBILE}) {
-        height: 275px;
-        margin: 0px auto;
-        left: -30px;
-        bottom: 20px;
     }
 `;
 
@@ -72,7 +53,8 @@ export const InfoContainer = styled.div`
     width: 600px;
     height: 150px;
     text-align: center;
-    position: relative;
+    margin: 0px auto;
+    position: relative; 
     left: 30px;
     bottom: 100px;
     z-index: 1;
@@ -80,7 +62,7 @@ export const InfoContainer = styled.div`
     @media (max-width: ${MEDIA.TABLET}) {
         width: 300px;
         height: 150px;
-        bottom: 100px;
+        left: 0px;
         margin: 0px auto;
     }
 
@@ -93,7 +75,6 @@ export const InfoContainer = styled.div`
 
     @media (max-width: ${MEDIA.MOBILE}) {
         width: 100%;
-        left: 0px;
         margin: 0px auto;
     }
 
@@ -115,12 +96,6 @@ export const P = styled.p`
         position: relative;
         bottom: 25px;
     }
-
-    @media (max-width: ${MEDIA.MOBILE}) {
-        position: relative;
-        bottom: 25px;
-        left: 30px;
-    }
 `;
 
 export const Summary = styled.div`
@@ -132,13 +107,21 @@ export const Summary = styled.div`
     text-align: center;
     line-height: 1.6;
     position: relative;
-    bottom: 400px;
-    z-index: 3;
+    bottom: 380px;
+    z-index: 4;
 
     @media (max-width: ${MEDIA.TABLET}) {
-        bottom: 530px;
-        padding: 5vh 0px 30px;
+        bottom: 400px;
+        padding: 0px 0px 50px;
         width: 80%;
+        margin: 20px auto;
+    }
+
+    @media (max-width: ${MEDIA.MOBILE}) {
+        font-size: 0.9rem;
+        margin: 20px auto;
+        bottom: 420px;
+        padding: 0px 0px 50px;
     }
 `;
 
@@ -146,7 +129,7 @@ export const BaseContainer = styled.div`
     position: relative;
     bottom: 320px;
     text-align: center;
-    z-index: 2;
+    z-index: 4;
     `;
 
 export const Point = styled.div`

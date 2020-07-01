@@ -15,13 +15,14 @@ width: 100vw;
 padding: 10px 0px 40px;
 background-color: ${SOLID.OFF_WHITE};
 text-align: center;
+
 `;
 
 export const Content = styled.div`
     width: 80%;
     max-width: 800px;
     margin: -50px auto 10px;
-    z-index: 3;
+    z-index: 4;
 `;
 
 export const Icon = styled.img`
@@ -47,11 +48,12 @@ export const Shadow = styled.div`
     text-align: center;
     font-size: 7rem;
     position: absolute;
-    top: 55%;
+    top: 50%;
     width: 100%;
     background-color: transparent;
-    z-index: 2;
+    z-index: 3;
     cursor: none;
+    user-select: none;
 
     @media (max-width: ${MEDIA.TABLET}) {
         font-size: 3rem;
