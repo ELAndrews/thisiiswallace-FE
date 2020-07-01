@@ -3,7 +3,7 @@ import Card from '@material-ui/core/Card';
 import CardContent from '@material-ui/core/CardContent';
 import Typography from '@material-ui/core/Typography';
 import CardMedia from '@material-ui/core/CardMedia';
-import { useStyles, BioContainer, Summary, Cards, CardsEd, Media, H1, H2, Divider, Img, BaseContainerB, Statement, ExperienceContainer, EducationContainer, AwardsContainer, ImgContainer, ExCard, ExImg, Icon, ResearchContainer, ReCard, ReImg, EdImg, ACard, Desktop, Mobile, H2Btn } from "./styling/bioStyling";
+import { useStyles, BioContainer, Summary, Cards, CardsEd, Media, H1, H2, Divider, Img, BaseContainerB, Statement, ExperienceContainer, EducationContainer, AwardsContainer, ImgContainer, ExCard, ExImg, Icon, ResearchContainer, ReCard, ReImg, EdImg, ACard, Desktop, Mobile, H2Btn, Awards, PartContainer, BaseContainerA } from "./styling/bioStyling";
 import { BaseContainer, Content, HeaderTriangle, Shadow } from "./styling/globalStyleComponents";
 import Brain from "../assets/imgs/brain.png";
 import Book from "../assets/imgs/book.png";
@@ -16,6 +16,8 @@ import Circle from "../assets/imgs/circle.png";
 import { bioData } from "../assets/data";
 import KeyboardArrowDownIcon from '@material-ui/icons/KeyboardArrowDown';
 import HighlightOffIcon from '@material-ui/icons/HighlightOff';
+import Particles from 'react-particles-js';
+
 
 export default function Bio() {
     const classes = useStyles();
@@ -49,7 +51,7 @@ export default function Bio() {
                 // DESKTOP VIEW
             }
             <Desktop>
-                <BaseContainerB>
+                <BaseContainerA>
                     <Icon src={Globe} alt="globe" />
                     <ExperienceContainer>
                         <H2>Professional Experience</H2>
@@ -107,9 +109,10 @@ export default function Bio() {
                         }
                     </EducationContainer>
                     <Icon src={Cert} alt="globe" />
+                    <AwardsContainer>
                     <H2>{'Prizes \& Awards'}</H2>
                     <Divider />
-                    <AwardsContainer>
+                    <Awards>
                         {
                             bioData.awards.map((curr, index) => {
                                 return (
@@ -120,13 +123,36 @@ export default function Bio() {
                                 )
                             })
                         }
+                        </Awards>
                     </AwardsContainer>
-                </BaseContainerB>
+                </BaseContainerA>
             </Desktop>
             {
                 // Mobile VIEW
             }
             <Mobile>
+                <PartContainer>
+                        <Particles id="myParticles"
+                            params={{
+                                "particles": {
+                                    "number": {
+                                        "value": 150
+                                    },
+                                    "move": {
+                                        "speed": 1
+                                    },
+                                    "size": {
+                                        "value": 4
+                                    },
+                                    "color": {
+                                        "value": "#FFFFFF"
+                                    },
+                                    "line_linked": {
+                                        "color": "#FFFFFF"
+                                    },
+                                }
+                            }} />
+                    </PartContainer>
                 <BaseContainerB>
                     <Icon src={Globe} alt="globe" />
                     <H2 value="experience">Professional Experience</H2>

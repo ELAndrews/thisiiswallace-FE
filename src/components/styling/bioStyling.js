@@ -5,17 +5,18 @@ import { SOLID, MEDIA } from "./variables"
 
 export const BioContainer = styled.div`
 width: 100vw;
+
+    background-color: #e7e9ec;
 `;
 
 export const Desktop = styled.div`
-    @media (max-width: ${MEDIA.TABLET}) {
+    @media (max-width: ${MEDIA.MOBILE}) {
         display: none;
     }
 `;
 
 export const Mobile = styled.div`
     display: none;
-    background-color: ${SOLID.OFF_WHITE};
     margin: 0px auto;
     padding: 30px;
     width: 60%;
@@ -33,7 +34,7 @@ export const Summary = styled.div`
     position: relative;
     bottom: 150px;
     z-index: 3;
-    `;
+`;
 
 export const Cards = styled.div`
     width: 90%;
@@ -121,6 +122,11 @@ export const ImgContainer = styled.div`
     height: calc(100% - 80px);
     z-index: 0;
 
+    @media (max-width: ${MEDIA.TABLET}) {
+        /* margin-left: -100px; */
+        display: none;
+    }
+
 `;
 
 export const Img = styled.img`
@@ -128,8 +134,27 @@ export const Img = styled.img`
     margin-left: -100px;
     z-index: 0;
 
-    @media (max-width: ${MEDIA.TABLET}) {
+    /* @media (max-width: ${MEDIA.MOBILE}) {
         margin-left: -100px;
+    } */
+`;
+
+export const BaseContainerA = styled.div`
+    width: 60%;
+    position: relative;
+    left: 25%;
+    bottom: 60px;
+    max-width: 700px;
+    margin: 0px 0px 0px 10%;
+    text-align: center;
+    z-index: 1;
+
+    @media (max-width: ${MEDIA.TABLET}) {
+        width: 80%;
+        /* left: 15%; */
+        left: 0px;
+        bottom: 100px;
+        margin: 0px auto;
     }
 `;
 
@@ -142,11 +167,16 @@ export const BaseContainerB = styled.div`
     margin: 0px 0px 0px 10%;
     text-align: center;
     z-index: 1;
+    display: none;
+    background-color: transparent;
 
-    @media (max-width: ${MEDIA.TABLET}) {
-        width: 100%;
-        left: 15%;
+    @media (max-width: ${MEDIA.MOBILE}) {
+        width: 80%;
+        /* left: 15%; */
+        left: 0px;
         bottom: 100px;
+        margin: 0px auto;
+        display: block
     }
 `;
 
@@ -160,13 +190,20 @@ export const Statement = styled.div`
     max-width: 700px;
     margin: 0px 0px 0px 10%;
     text-align: center;
+    z-index: 3;
+
+    @media (max-width: ${MEDIA.TABLET}) {
+        width: 80%;
+        left: 0px;
+        margin: 0px auto 20px;
+    }
 `;
 
 export const ExperienceContainer = styled.div`
-    margin: 20px auto;
+    margin: 40px auto;
     width: 90%;
     text-align: left;
-    @media (max-width: ${MEDIA.TABLET}) {
+    @media (max-width: ${MEDIA.MOBILE}) {
         display: none;
     }
 `;
@@ -184,9 +221,9 @@ export const ExImg = styled.img`
 `;
 
 export const ResearchContainer = styled.div`
-    margin: 20px auto;
+        margin: 40px auto;
     text-align: left;
-    @media (max-width: ${MEDIA.TABLET}) {
+    @media (max-width: ${MEDIA.MOBILE}) {
         display: none;
     }
 `;
@@ -205,10 +242,10 @@ export const ReImg = styled.img`
 `;
 
 export const EducationContainer = styled.div`
-    margin: 20px auto;
+    margin: 40px auto;
     width: 90%;
     text-align: left;
-    @media (max-width: ${MEDIA.TABLET}) {
+    @media (max-width: ${MEDIA.MOBILE}) {
         display: none;
     }
 `;
@@ -221,25 +258,33 @@ export const EdImg = styled.img`
 `;
 
 export const AwardsContainer = styled.div`
-        margin: 20px auto;
+        margin: 40px auto;
+    width: 90%;
+    @media (max-width: ${MEDIA.MOBILE}) {
+        display: none;
+    }
+`;
+
+export const Awards = styled.div`
+    margin: 40px auto;
     width: 90%;
     text-align: left;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    @media (max-width: ${MEDIA.TABLET}) {
-        display: none;
-    }
 `;
 
 export const ACard = styled.div`
     padding: 10px;
     margin: 10px;
+
 `;
 
 export const Icon = styled.img`
-    margin: 0px auto;
+    margin: 10px auto;
     height: 50px;
+        position: relative;
+    top: 30px;
 `;
 
 export const H2Btn = styled.button`
@@ -249,4 +294,12 @@ export const H2Btn = styled.button`
     z-index: 3;
     position: relative;
     left: 10px;
+`;
+
+export const PartContainer = styled.div`
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 99vw;
+    height: 99vh;
 `;
