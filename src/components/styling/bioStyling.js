@@ -302,4 +302,10 @@ export const PartContainer = styled.div`
     left: 0px;
     width: 99vw;
     height: 99vh;
+    display: none;
+    z-index: 0;
+
+    @media (max-width: ${MEDIA.TABLET}) {
+        display: block;
+    }
 `;

@@ -130,7 +130,6 @@ export default function Bio() {
             {
                 // Mobile VIEW
             }
-            <Mobile>
                 <PartContainer>
                         <Particles id="myParticles"
                             params={{
@@ -153,6 +152,7 @@ export default function Bio() {
                                 }
                             }} />
                     </PartContainer>
+            <Mobile>
                 <BaseContainerB>
                     <Icon src={Globe} alt="globe" />
                     <H2 value="experience">Professional Experience</H2>

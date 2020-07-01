@@ -25,7 +25,7 @@ export const Info = styled.div`
     display: flex; 
     padding: 2%;
     flex-direction: row-reverse;
-    margin: 0px auto;
+    margin: -70px auto 0px;
     justify-content: space-between;
     z-index: -1;
 
