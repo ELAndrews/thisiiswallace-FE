@@ -83,7 +83,15 @@ export const Form = styled.form`
 export const Input = styled.input`
   width: 80%;
   min-width: 200px;
-  margin: 5px auto;
+  margin: 10px auto;
+  font-size: 0.9rem;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid ${SOLID.AQUA_BLUE};
+
+  &:focus {
+    outline: none;
+  }
 `;
 
 export const Textarea = styled.textarea`
@@ -91,6 +99,15 @@ export const Textarea = styled.textarea`
   min-width: 200px;
   margin: 5px auto;
   font-family: 'Lato', sans-serif;
+  resize: none;
+  font-size: 0.9rem;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid ${SOLID.AQUA_BLUE};
+
+  &:focus {
+    outline: none;
+  }
 `;
 
 export const Button = styled.button`
